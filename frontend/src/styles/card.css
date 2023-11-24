@@ -1,0 +1,18 @@
+.ant-card-bordered{
+    width: 200px;
+    border: 1px solid rgb(24, 21, 21);
+    background-color: rgba(206, 236, 244, 0.916);
+    color: black;
+    transition: box-shadow 0.3s; 
+}
+
+.ant-card-bordered:hover {
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.8); /* Add the desired box-shadow on hover */
+  }
+
+  @media screen and (max-width: 768px){
+  .ant-card-bordered{
+    height: 170px;
+  }
+
+  }

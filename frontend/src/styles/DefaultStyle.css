@@ -1,0 +1,58 @@
+.ant-layout.ant-layout-has-sider{
+    height: 100%;
+   
+}
+
+.ant-layout-has-sider{
+    padding: 5px !important;
+   
+}
+
+.ant-layout-sider{
+    padding-top: 10px !important;
+    border-radius: 10px !important;
+}
+.ant-menu-item a{
+  text-decoration: none;
+}
+
+/* style for the header */
+.ant-layout-header{
+    box-shadow: 0 0 3px grey;
+    border-radius: 8px;
+    margin: 5px;
+}
+/* collapse button */
+.ant-btn.ant-btn-icon-only{
+  margin-left: -20px !important;
+}
+.Header .ant-btn {
+    margin-left: 0; 
+    margin-right: auto;
+   
+  }
+.header_container{
+  flex: 1;
+  text-align: center;
+}
+.header {
+    margin: 0;
+    color: #043b8d;
+    font-size: 20px;
+    font-weight: 900;
+    flex: 1;
+    text-align: center;
+    justify-content: center;
+  }
+  .sidebar_header {
+    text-align: center;
+    color: #ffffff;
+    font-weight: 600;
+    margin-top: 8px;
+    white-space: normal; /* Allow text to wrap onto new lines */
+    overflow: hidden; /* Hide overflowing text */
+  }
+
+  
+
+  

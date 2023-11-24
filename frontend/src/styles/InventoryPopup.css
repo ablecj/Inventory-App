@@ -1,0 +1,17 @@
+/* .ant-modal .ant-modal-body{
+    padding: 30px !important;
+} */
+
+.ant-modal-content{
+    width: 80%;
+}
+
+.ant-modal .ant-modal-title{
+    color: #1b609d;
+    display: flex;
+    justify-content: center;
+}
+
+.ant-btn-primary{
+    margin-top: 30px;
+}

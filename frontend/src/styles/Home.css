@@ -1,0 +1,46 @@
+/* Home.css */
+.container {
+    width: 100%;
+    max-width: 1200px;
+    margin: 0 auto;
+    display: flex;
+    justify-content: center;
+  }
+  
+  .content {
+    padding: 20px;
+    display: grid;
+    grid-template-columns: repeat(2, 4fr);
+    gap: 30px; /* Increased gap between sections */
+    grid-column-gap: 250px; /* Space between columns */
+  }
+  
+  /* mobile view */
+  @media screen and (max-width: 768px) {
+    .content {
+      grid-template-columns: 1fr; /* Single column for mobile view */
+      grid-column-gap: 0; /* No gap between columns in mobile view */
+      width: 150px;
+      display: flex;
+      flex-direction: column;
+     
+    }
+    
+    /* Adjust card size for mobile view when collapsed */
+    .ant-card-bordered {
+      max-width: 100%; /* Ensure cards take full width */
+      width: 100%; /* Set cards to occupy full width */
+    }
+  } 
+
+  /* .section {
+    padding: 20px; 
+    background-color: #ffffff;
+    border-radius: 8px; 
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.1); 
+  }
+  .section:hover{
+    background-color: rgba(102, 98, 105, 0.313);
+  } */
+  
+  

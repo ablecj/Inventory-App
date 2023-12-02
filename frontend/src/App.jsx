@@ -11,7 +11,7 @@ import InventoryPage from './pages/InventoryPage';
 const App = () => {
   return (
     <div>
-      {/* <h1>Tabsoft Billing</h1> */}
+      
       <Routes>
         <Route path="/" element={<Home />} />
         <Route path='/billing-page' element={<BillingPage />} />

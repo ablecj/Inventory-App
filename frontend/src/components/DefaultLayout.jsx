@@ -11,6 +11,7 @@ import {
 } from "@ant-design/icons";
 import { Layout, Menu, Button, theme } from "antd";
 import { Link } from "react-router-dom";
+
 const { Header, Sider, Content } = Layout;
 
 const DefaultLayout = ({ children }) => {
@@ -19,6 +20,7 @@ const DefaultLayout = ({ children }) => {
     token: { colorBgContainer },
   } = theme.useToken();
   return (
+    
     <Layout>
       <Sider trigger={null} collapsible collapsed={collapsed}>
         <div className="demo-logo-vertical">
@@ -103,6 +105,7 @@ const DefaultLayout = ({ children }) => {
         </Content>
       </Layout>
     </Layout>
+   
   );
 };
 

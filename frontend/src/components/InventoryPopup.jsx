@@ -6,9 +6,9 @@ import '../styles/InventoryPopup.css'
 // eslint-disable-next-line react/prop-types
 const InventoryPopup = ({modelOpen,closeModal}) => {
 
-    const handleSave = ()=>{
-        console.log('Save button clicked!')
-        closeModal();
+      const handleSave = ()=>{
+          console.log('Save button clicked!')
+          closeModal();
     }
   return (
     <Modal

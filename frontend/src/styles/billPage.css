@@ -22,16 +22,18 @@
 }
 
 .barcode-section {
-  width: 40%;
+  width: 100%;
+  display: flex;
+  justify-content: center;
 }
 .barcode-section input {
   padding: 5px;
   margin: 10px;
 }
-/* 
+
 .Add-barcode-input{
-    
-} */
+    display: flex;
+}
 
 .ant-input-number {
   width: 50px !important;
@@ -41,6 +43,7 @@
 .input-btns {
   display: flex;
   justify-content: flex-start; /* Adjusted from space-between to flex-start */
+  margin-bottom: 10px; 
 }
 
 .input-container {
@@ -126,4 +129,79 @@ p {
   fill: #001e2b;
   border-color: #001e2b;
   background-color: #6c8dd5;
+}
+
+/* Mobile view */
+@media (max-width: 768px) {
+  .bill-heading {
+    font-size: 18px;
+  }
+
+  .barcode-section {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .barcode-section input {
+    margin: 5px 0;
+  }
+
+  .Add-barcode-input {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .input-btns {
+    flex-direction: column;
+    align-items: center;
+    margin: 10px 0;
+  }
+
+  .input-container {
+    align-items: center;
+    margin: 10px 0;
+  }
+
+  .button-containers {
+    margin: 10px 0;
+  }
+
+  .button-containers button {
+    margin-top: 10px;
+  }
+
+  .billpage-table {
+    position: relative;
+    overflow-x: auto;
+    width: 100%;
+    margin-top: 10px; /* Adjust as needed */
+  }
+
+  .billpage-table table {
+    width: 100%;
+  }
+
+  /* .ant-pagination{
+    position: sticky;
+    bottom: 0;
+    background-color: #fff; 
+    z-index: 1; 
+  } */
+
+  .total-section {
+    flex-direction: column;
+    align-items: center;
+    margin: 10px 0;
+  }
+
+  .bill-page-btn {
+    flex-direction: column;
+    align-items: center;
+    margin: 7%;
+  }
+
+  .bill-page-btn button {
+    width: 100%;
+    margin-top: 10px;
+  }
 }

@@ -7,24 +7,24 @@ import Cards from "../components/Cards";
 
 const Home = () => {
   const cardData = [
-    { title: "Total Invoice Today", content: 'Content for Card 1' },
-    { title: 'Total Invoice Monthly', content: 'Content for Card 2' },
-    { title: 'Total Sales Today', content: 'Content for Card 3' },
-    { title: 'Total Sales this month', content: 'Content for Card 4' },
-    { title: 'Order form', content: 'Content for Card 5' },
-    { title: 'Card 6', content: 'Content for Card 6' },
+    { title: "Total Invoice Today", content: "Content for Card 1" },
+    { title: "Total Invoice Monthly", content: "Content for Card 2" },
+    { title: "Total Sales Today", content: "Content for Card 3" },
+    { title: "Total Sales this month", content: "Content for Card 4" },
+    { title: "Order form", content: "Content for Card 5" },
+    { title: "Card 6", content: "Content for Card 6" },
     // Add more objects for additional cards...
   ];
   return (
     <DefaultLayout>
-        <div className="container">
-          <div className="content">
-            {/* <div className="section"> */}
-            {cardData.map((card, index) => (
-          <Cards key={index} title={card.title} content={card.content} />
-        ))}
-            {/* </div> */}
-            {/* <div className='section'>
+      <div className="container">
+        <div className="content">
+          {/* <div className="section"> */}
+          {cardData.map((card, index) => (
+            <Cards key={index} title={card.title} content={card.content} />
+          ))}
+          {/* </div> */}
+          {/* <div className='section'>
               Section 2
             </div>
             <div className='section'>
@@ -39,8 +39,8 @@ const Home = () => {
             <div className='section'>
               Section 6
             </div> */}
-          </div>
         </div>
+      </div>
     </DefaultLayout>
   );
 };

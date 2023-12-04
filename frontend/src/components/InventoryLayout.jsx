@@ -28,10 +28,10 @@ const InventoryLayout = ({ children }) => {
 
           <Menu theme="dark" mode="inline" defaultSelectedKeys={["1"]}>
             <Menu.Item key="1" icon={<UserOutlined />}>
-              <Link to="/">Inventory update</Link>
+              <Link to="/inventory">Inventory update</Link>
             </Menu.Item>
             <Menu.Item key="2" icon={<UserOutlined />}>
-              <Link to="/billing-page">Purchase Bill update</Link>
+              <Link to="/purchase-bill">Purchase Bill update</Link>
             </Menu.Item>
             <Menu.Item key="3" icon={<UserOutlined />}>
               <Link to="/inventory">Inventory category</Link>

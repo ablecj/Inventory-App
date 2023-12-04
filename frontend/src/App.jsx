@@ -7,6 +7,7 @@ import Home from './pages/Home';
 import DefaultLayout from './components/DefaultLayout';
 import BillingPage from './pages/BillingPage';
 import InventoryPage from './pages/InventoryPage';
+import PurchaseBillUpdate from './Inventory Pages/PurchaseBillUpdate';
 
 const App = () => {
   return (
@@ -16,6 +17,8 @@ const App = () => {
         <Route path="/" element={<Home />} />
         <Route path='/billing-page' element={<BillingPage />} />
         <Route path='/inventory' element={<InventoryPage />} />
+        {/* inventory pages  */}
+        <Route path='/purchase-bill' element={<PurchaseBillUpdate />} />
       </Routes>
     </div>
   );

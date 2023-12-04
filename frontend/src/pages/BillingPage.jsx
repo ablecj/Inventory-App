@@ -6,6 +6,8 @@ import { Button, Form, Input, InputNumber, Table } from "antd";
 import NewCreditCustomer from "../components/NewCreditCustomer";
 import SaveOrder from "../components/SaveOrder";
 import PhonePopUp from "../components/PhonePopUp";
+import PaymentModePopUP from "../components/PaymentModePopUP";
+import BillPopUp from "../components/BillPopUp";
 
 const BillingPage = () => {
   const [dataSource, setDataSource] = useState([]);
@@ -163,7 +165,7 @@ const BillingPage = () => {
   const [popupOpen, setPopupOpen] = useState(false);
 
   const handleNewCreditCustomer = ()=>{
-    setPopupOpen(true)
+    setPopupOpen(true);
   }
 
   const closeCreditCustomer = ()=>{
@@ -190,6 +192,24 @@ const BillingPage = () => {
 
   const closePhonePopUp = ()=>{
     setPhonePopUp(false);
+  }
+  // state for the payment mode 
+  const [paymentPopUp, setPaymentPopUp] = useState(false);
+
+  const handlePaymentModePopUp = ()=>{
+    setPaymentPopUp(true);
+  }
+  const closePaymentPopUp = ()=>{
+    setPaymentPopUp(false);
+  }
+  // useState for the bill pop up method
+  const [billPopUp, setBillPopUp] = useState(false);
+
+  const handleBillPopUp = ()=>{
+    setBillPopUp(true);
+  }
+  const closeBillPopUp = ()=>{
+    setBillPopUp(false);
   }
 
   return (
@@ -232,13 +252,15 @@ const BillingPage = () => {
               <button onClick={handleNewCreditCustomer}>New Credit Customer</button>
               <button onClick={handleSaveOrder}>Save Order</button>
               <button onClick={handlePhonePopUp}>Phone</button>
-              <button>Payment Mode</button>
-              <button>Bill</button>
+              <button onClick={handlePaymentModePopUp}>Payment Mode</button>
+              <button onClick={handleBillPopUp}>Bill</button>
             </div>
             {/* components for pop up */}
             <NewCreditCustomer popupOpen={popupOpen} closeCreditCustomer={closeCreditCustomer} />
             <SaveOrder saveOrderPopUp={saveOrderPopUp} closeSaveOrder={closeSaveOrder}  />
             <PhonePopUp phonePopUp={phonePopUp} closePhonePopUp={closePhonePopUp} />
+            <PaymentModePopUP paymentPopUp={paymentPopUp} closePaymentPopUp={closePaymentPopUp} />
+          <BillPopUp billPopUp={billPopUp} closeBillPopUp={closeBillPopUp} />
           </div>
         </div>
       </DefaultLayout>

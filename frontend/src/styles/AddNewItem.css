@@ -1,0 +1,13 @@
+
+.AddNewItemInput{
+    padding: 15px;
+}
+
+.AddNewItemInput,input{
+    margin-top: 10px !important;
+}
+
+.ant-modal-content{
+    width: 100%;
+}
+

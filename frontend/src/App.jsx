@@ -8,6 +8,10 @@ import DefaultLayout from './components/DefaultLayout';
 import BillingPage from './pages/BillingPage';
 import InventoryPage from './pages/InventoryPage';
 import PurchaseBillUpdate from './Inventory Pages/PurchaseBillUpdate';
+import CustomerAccount from './Inventory Pages/CustomerAccount';
+import VendorAccount from './Inventory Pages/VendorAccount';
+import InventoryItems from './Inventory Pages/InventoryItems';
+import DamageItems from './Inventory Pages/DamageItems';
 
 const App = () => {
   return (
@@ -19,6 +23,10 @@ const App = () => {
         <Route path='/inventory' element={<InventoryPage />} />
         {/* inventory pages  */}
         <Route path='/purchase-bill' element={<PurchaseBillUpdate />} />
+        <Route path='/customer-Account' element={<CustomerAccount />} />
+        <Route path='/vendor-account' element={<VendorAccount />} />
+        <Route path='/inventory-items' element={<InventoryItems />} />
+        <Route path='/damage-items' element={<DamageItems />} />
       </Routes>
     </div>
   );

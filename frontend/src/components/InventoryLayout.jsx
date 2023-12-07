@@ -9,7 +9,7 @@ import {
 } from "@ant-design/icons";
 import { Layout, Menu, Button, theme } from "antd";
 const { Header, Sider, Content } = Layout;
-import { Link } from "react-router-dom";
+import { Link, useLocation } from "react-router-dom";
 import "../styles/InventoryLayout.css";
 
 // eslint-disable-next-line react/prop-types
@@ -18,6 +18,8 @@ const InventoryLayout = ({ children }) => {
   const {
     token: { colorBgContainer },
   } = theme.useToken();
+  const location = useLocation();
+  const { pathname } = location;
   return (
     <div className="inventoryLayout-Header">
       <Layout>
@@ -26,27 +28,27 @@ const InventoryLayout = ({ children }) => {
             <h3 className="sidebar_header">Billing App</h3>
           </div>
 
-          <Menu theme="dark" mode="inline" defaultSelectedKeys={["1"]}>
-            <Menu.Item key="1" icon={<UserOutlined />}>
+          <Menu theme="dark" mode="inline" defaultSelectedKeys={[pathname]}>
+            <Menu.Item key="/inventory" icon={<UserOutlined />}>
               <Link to="/inventory">Inventory update</Link>
             </Menu.Item>
-            <Menu.Item key="2" icon={<UserOutlined />}>
+            <Menu.Item key="/purchase-bill" icon={<UserOutlined />}>
               <Link to="/purchase-bill">Purchase Bill update</Link>
             </Menu.Item>
-            <Menu.Item key="3" icon={<UserOutlined />}>
+            {/* <Menu.Item key="3" icon={<UserOutlined />}>
               <Link to="/inventory">Inventory category</Link>
+            </Menu.Item> */}
+            <Menu.Item key="/vendor-account" icon={<VideoCameraOutlined />}>
+              <Link to="/vendor-account">Vendor Account</Link>
             </Menu.Item>
-            <Menu.Item key="4" icon={<VideoCameraOutlined />}>
-              <Link to="/nav4">Vendor Account</Link>
+            <Menu.Item key="/customer-Account" icon={<UploadOutlined />}>
+              <Link to="/customer-Account">Customer Account</Link>
             </Menu.Item>
-            <Menu.Item key="5" icon={<UploadOutlined />}>
-              <Link to="/nav5">Customer Account</Link>
+            <Menu.Item key="/inventory-items" icon={<UploadOutlined />}>
+              <Link to="/inventory-items">Inventory Items</Link>
             </Menu.Item>
-            <Menu.Item key="6" icon={<UploadOutlined />}>
-              <Link to="/nav6">Inventory Items</Link>
-            </Menu.Item>
-            <Menu.Item key="7" icon={<UploadOutlined />}>
-              <Link to="/nav7">Damage Items</Link>
+            <Menu.Item key="/damage-items" icon={<UploadOutlined />}>
+              <Link to="/damage-items">Damage Items</Link>
             </Menu.Item>
           </Menu>
         </Sider>

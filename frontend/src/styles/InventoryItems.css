@@ -1,0 +1,82 @@
+.inventory-item-container{
+    width: 100%;
+    height: 100%;
+}
+.inventory-item-heading{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.inventory-item-heading h4{
+    font-size: medium;
+    color: rgb(5, 81, 213);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding-bottom: 2rem;
+    /* font-size: 20px; */
+    font-weight: 900;
+}
+.search-section{
+    display: flex;
+    width: 100%;
+    justify-content: space-evenly;
+}
+.search-section input{
+    width: 35%;
+    margin: 10px;
+}
+.search-section button{
+    margin: 0;
+    top: 10px;
+}
+
+/* for mobile responsive */
+/* CSS for mobile view */
+@media screen and (max-width: 768px) {
+    .search-section {
+      display: flex;
+      flex-direction: column;
+      gap: 5px; /* Add spacing between input/button vertically */
+      width: 100%;
+      height: fit-content;
+      align-items: center;
+    }
+    .search-section input{
+        width: 80%;
+    }
+
+    .search-button {
+        text-align: center;
+        width: 50%; /* Make button full width */
+    }
+  
+    /* Ensure table is responsive */
+    .inventory-table {
+        margin-top: 30px;
+      overflow-x: auto;
+      width: 100%;
+      -webkit-overflow-scrolling: touch;
+    }
+  }
+  
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

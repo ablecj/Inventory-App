@@ -1,0 +1,82 @@
+.damage-item-container{
+    width: 100%;
+    height: 100%;
+}
+.damage-heading{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.damage-heading h4{
+    font-size: medium;
+    color: rgb(5, 81, 213);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding-bottom: 2rem;
+    /* font-size: 20px; */
+    font-weight: 900;
+}
+.damage-item-content form div {
+    display: flex;
+    align-items: center;
+    margin-bottom: 10px;
+  }
+  
+  .damage-item-content label {
+    margin-right: 10px;
+    min-width: 80px; /* Adjust the width as needed */
+  }
+  
+  .damage-item-content input {
+    padding: 5px;
+    font-size: 14px;
+    border-radius: 3px;
+    border: 1px solid #ccc;
+    width: 50%; /* Adjust the width as needed */
+    box-sizing: border-box;
+  }
+  
+  .damage-btn {
+    display: flex;
+    justify-content: center;
+    margin-top: 20px;
+    margin-left: 15%;
+  }
+
+  .damage-btn button {
+    background-color: #007bff;
+    color: #fff;
+    cursor: pointer;
+  }
+  
+  .damage-item-content input[type="number"] {
+    /* Additional styles for number input */
+    -moz-appearance: textfield;
+  }
+  
+  .damage-item-content input[type="number"]::-webkit-inner-spin-button,
+  .damage-item-content input[type="number"]::-webkit-outer-spin-button {
+    -webkit-appearance: none;
+    margin: 0;
+  }
+  
+  
+  
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

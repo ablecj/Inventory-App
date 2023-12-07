@@ -1,0 +1,64 @@
+.customer-accnt-container {
+  height: 100%;
+  width: 100%;
+}
+.customer-heading {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.customer-heading h4 {
+  font-size: medium;
+  color: rgb(5, 81, 213);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding-bottom: 2rem;
+  /* font-size: 20px; */
+  font-weight: 900;
+}
+.customer-accnt-container {
+  width: 100%;
+  height: fit-content;
+}
+
+.customer-accnt-container label {
+  top: 18%;
+}
+
+/* for mobile view */
+/* CSS for mobile view */
+@media screen and (max-width: 768px) {
+  .customer-accnt-container {
+    padding: 20px; /* Add padding to the container for better spacing */
+  }
+
+  .customer-heading h4 {
+    padding-bottom: 1rem; /* Reduce heading padding */
+    font-size: 18px; /* Decrease heading font size */
+  }
+
+  .customer-accnt-content {
+    padding: 0 10px; /* Add horizontal padding to the form content */
+  }
+
+  .customer-accnt-container .ant-form-item {
+    margin-bottom: 16px; /* Adjust margin between form items */
+  }
+
+  .customer-accnt-container .ant-form-item-label {
+    text-align: left; /* Align form labels to the left */
+  }
+
+  .customer-accnt-container .ant-form-item-control {
+    margin-left: 0; /* Reset left margin for form controls */
+  }
+
+  .customer-accnt-container .ant-btn {
+    width: 100%; /* Make the button full width */
+    display: flex;
+    align-items: center;
+  }
+}
+

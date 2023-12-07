@@ -10,7 +10,7 @@ import {
   VideoCameraOutlined,
 } from "@ant-design/icons";
 import { Layout, Menu, Button, theme } from "antd";
-import { Link } from "react-router-dom";
+import { Link, useLocation } from "react-router-dom";
 
 const { Header, Sider, Content } = Layout;
 
@@ -19,6 +19,11 @@ const DefaultLayout = ({ children }) => {
   const {
     token: { colorBgContainer },
   } = theme.useToken();
+
+  // uselocation
+  const location = useLocation();
+  const {pathname} = location;
+
   return (
     
     <Layout>
@@ -27,14 +32,14 @@ const DefaultLayout = ({ children }) => {
           <h3 className="sidebar_header">Billing App</h3>
         </div>
 
-        <Menu theme="dark" mode="inline" defaultSelectedKeys={["1"]}>
-          <Menu.Item key="1" icon={<UserOutlined />}>
+        <Menu theme="dark" mode="inline" defaultSelectedKeys={[pathname]}>
+          <Menu.Item key="/" icon={<UserOutlined />}>
             <Link to="/">Home</Link>
           </Menu.Item>
-          <Menu.Item key="2" icon={<UserOutlined />}>
+          <Menu.Item key="/billing-page" icon={<UserOutlined />}>
             <Link to="/billing-page">Billing</Link>
           </Menu.Item>
-          <Menu.Item key="3" icon={<UserOutlined />}>
+          <Menu.Item key="/inventory" icon={<UserOutlined />}>
             <Link to="/inventory">Inventory</Link>
           </Menu.Item>
           <Menu.Item key="4" icon={<VideoCameraOutlined />}>

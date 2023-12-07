@@ -2,11 +2,23 @@
 import React, { useEffect, useState } from "react";
 import InventoryLayout from "../components/InventoryLayout";
 import "../styles/purchaseBillUpdate.css";
-import { Button, Form, Input, Table } from "antd";
+import {
+  Button,
+  Descriptions,
+  Form,
+  Input,
+  Table,
+  DatePicker,
+  Space,
+} from "antd";
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+import { faRupeeSign } from "@fortawesome/free-solid-svg-icons";
 import BarCodePopUpManual from "../PurchaseBillPopUp/BarCodePopUpManual";
 import ScodePurchasePopUp from "../PurchaseBillPopUp/ScodePurchasePopUp";
 import AddNewItemPurchase from "../PurchaseBillPopUp/AddNewItemPurchase";
 import PurchaseCategory from "../PurchaseBillPopUp/PurchaseCategory";
+import AddNewVendorPopUp from "../PurchaseBillPopUp/AddNewVendorPopUp";
+import UpdateBillPopUp from "../PurchaseBillPopUp/UpdateBillPopUp";
 
 const PurchaseBillUpdate = () => {
   const [form] = Form.useForm();
@@ -241,18 +253,35 @@ const PurchaseBillUpdate = () => {
   const closeCategoryPopUp = () => {
     setCategoryPopUp(false);
   };
-// vendo phone number searching button click
-const handleClickSearch =()=>{
-  console.log("Vendor search button clicked!")
-}
+  // vendo phone number searching button click
+  const handleClickSearch = () => {
+    console.log("Vendor search button clicked!");
+  };
 
+  // add new vendor button
+  const [addVendor, setAddVendor] = useState(false);
 
-// add new vendor button
-const handleAddNewVendor = ()=>{
-  console.log("add new vendor clicked!");
-}
+  const handleAddNewVendor = () => {
+    setAddVendor(true);
+    console.log("add new vendor clicked!");
+  };
+  const closeNewVendor = () => {
+    setAddVendor(false);
+  };
+  // date picker function
+  const onChange = (date, dateString) => {
+    console.log(date, dateString);
+  };
 
+  // handle Bill Update function
+  const [billUpdate, setBillUpdate] = useState(false);
 
+  const handleUpdateBill = () => {
+    setBillUpdate(true);
+  };
+  const closeBillUpdate = () => {
+    setBillUpdate(false);
+  };
 
   return (
     <InventoryLayout>
@@ -297,20 +326,52 @@ const handleAddNewVendor = ()=>{
           <div className="vendor-section">
             <label htmlFor="vendorPhone">Vendor Phone Number:</label>{" "}
             {/* Label */}
-            <Input
-              id="vendorPhone"
-              placeholder="Enter phone number"
-            />{" "}
+            <Input id="vendorPhone" placeholder="Enter phone number" />{" "}
             {/* Input field */}
             <Button type="primary" onClick={handleClickSearch}>
               Search
             </Button>{" "}
             {/* Button */}
             <div className="Addnewvendor-btn">
-            <Button type="primary" onClick={handleAddNewVendor} >
-              Add New Vendor
-            </Button>
+              <Button type="primary" onClick={handleAddNewVendor}>
+                Add New Vendor
+              </Button>
             </div>
+            <AddNewVendorPopUp
+              addVendor={addVendor}
+              closeNewVendor={closeNewVendor}
+            />
+          </div>
+          <div className="vendor-details">
+            <Descriptions bordered>
+              <Descriptions.Item label="Name">john Doe</Descriptions.Item>
+              <Descriptions.Item label="Phone Number">
+                1236549878
+              </Descriptions.Item>
+              <Descriptions.Item label="Old Balance">
+                1658 &nbsp;
+                <FontAwesomeIcon icon={faRupeeSign} />
+              </Descriptions.Item>
+            </Descriptions>
+          </div>
+          <div className="vendor-exist">
+            <label htmlFor="Bill date">Bill Date:</label>&nbsp;
+            <Space direction="horizontal">
+              <DatePicker onChange={onChange} />
+            </Space>
+            <label htmlFor="Due date">Due Date:</label>&nbsp;
+            <Space direction="horizontal">
+              <DatePicker onChange={onChange} />
+            </Space>
+            <label htmlFor="InvoiceNumber">Invoice No:</label>
+            <Input id="Invoice" placeholder="Enter the Invoice Number" />
+            <Button type="primary" onClick={handleUpdateBill}>
+              Update Bill
+            </Button>
+            <UpdateBillPopUp
+              billUpdate={billUpdate}
+              closeBillUpdate={closeBillUpdate}
+            />
           </div>
         </div>
       </div>

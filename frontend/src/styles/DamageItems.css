@@ -22,6 +22,10 @@
     align-items: center;
     margin-bottom: 10px;
   }
+
+  .damage-item-content form{
+    margin-left: 10%;
+  }
   
   .damage-item-content label {
     margin-right: 10px;
@@ -61,7 +65,51 @@
     margin: 0;
   }
   
+  /* mobile view */
+  /* Mobile-specific styles */
+/* Mobile-specific styles */
+@media screen and (max-width: 768px) {
+  .damage-item-container {
+    padding: 10px; /* Adjust padding as needed */
+    box-sizing: border-box;
+    padding-bottom: 0; 
+    margin-bottom: 0;
+  }
+
+  .damage-item-content form {
+    margin-left: 0;
+  }
   
+  .damage-item-content input {
+    width: calc(100% - 20px); /* Adjust width and margins */
+    margin-right: 10px; /* Adjust margins as needed */
+  }
+  
+  .damage-btn {
+    margin-left: 0;
+    text-align: center; /* Center button on mobile */
+  }
+
+  .damage-btn button {
+    width: 50%; /* Make the button full width */
+  }
+
+  .damage-table {
+    overflow-x: auto;
+    width: calc(100% + 20px); /* Adjust width and margins */
+    margin-left: -10px; /* Counteract padding */
+    margin-right: -10px; /* Counteract padding */
+  }
+
+  .damage-table .ant-table {
+    white-space: nowrap;
+  }
+  .damage-Item-Layout{
+    height: 100%;
+  }
+}
+
+
   
 
 

@@ -19,26 +19,11 @@ const Home = () => {
     <DefaultLayout>
       <div className="container">
         <div className="content">
-          {/* <div className="section"> */}
+          
           {cardData.map((card, index) => (
             <Cards key={index} title={card.title} content={card.content} />
-          ))}
-          {/* </div> */}
-          {/* <div className='section'>
-              Section 2
-            </div>
-            <div className='section'>
-              Section 3
-            </div>
-            <div className='section'>
-              Section 4
-            </div>
-            <div className='section'>
-              Section 5
-            </div>
-            <div className='section'>
-              Section 6
-            </div> */}
+          ) )}
+ 
         </div>
       </div>
     </DefaultLayout>

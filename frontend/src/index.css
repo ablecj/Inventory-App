@@ -67,7 +67,14 @@ button:focus-visible {
   }
 } */
 
-body{
+html, body {
+  height: fit-content;
   margin: 0;
   padding: 0;
 }
+
+#root,
+.app-container {
+  height: 100%;
+}
+

@@ -45,14 +45,17 @@ const DefaultLayout = ({ children }) => {
           <Menu.Item key="4" icon={<VideoCameraOutlined />}>
             <Link to="/nav4">Report</Link>
           </Menu.Item>
-          <Menu.Item key="5" icon={<UploadOutlined />}>
-            <Link to="/nav5">Order form</Link>
+          <Menu.Item key="/order-form" icon={<UploadOutlined />}>
+            <Link to="/order-form">Order form</Link>
           </Menu.Item>
-          <Menu.Item key="6" icon={<UploadOutlined />}>
-            <Link to="/nav6">Purchase A/c</Link>
+          <Menu.Item key="/purchase-account" icon={<UploadOutlined />}>
+            <Link to="/purchase-account">Purchase A/c</Link>
           </Menu.Item>
-          <Menu.Item key="7" icon={<UploadOutlined />}>
-            <Link to="/nav7">Sales</Link>
+          <Menu.Item key="/sales" icon={<UploadOutlined />}>
+            <Link to="/sales">Sales</Link>
+          </Menu.Item>
+          <Menu.Item key="/customer-details" icon={<UploadOutlined />}>
+            <Link to="/customer-details">customer A/c</Link>
           </Menu.Item>
           <Menu.Item key="8" icon={<UploadOutlined />}>
             <Link to="/nav8">Debit Note</Link>

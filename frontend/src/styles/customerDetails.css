@@ -1,0 +1,67 @@
+.customer-details-container{
+    height: 100%;
+    width: 100%;
+}
+
+.customerdetail-heading{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.customerdetail-heading h4{
+    display: flex;
+    text-align: center;
+    justify-content: center;
+    color: rgb(5, 81, 213);
+    font-size: 23px;
+    font-style: italic;
+}
+
+/* .customerdetails{
+    margin-top: 25px;
+   
+}
+.customerdetails p{
+    margin: 5px;
+    color:#043b8d;
+    font-weight: 500;
+    font-size: 14px;
+} */
+/* .customerdetail-content{
+    display: flex;
+    margin: 20px;
+} */
+
+.customerdetail-content {
+    margin-top: 25px;
+    display: flex;
+    /* justify-content: space-between; */
+    align-items: flex-start; /* Align items at the start of the cross axis */
+  }
+  
+  .customerdetails{
+    flex-basis: 35%;
+  }
+  .customerdetails p{
+    margin-bottom: 25px;
+    color:#043b8d;
+    font-weight: 500;
+    font-size: 14px;
+}
+  .customertable {
+    display: flex;
+    flex-basis: 55%; /* Adjust the width of each column as needed */
+  }
+  
+  .customertable-content {
+    display: flex;
+    /* Arrange cards vertically */
+    gap: 20px; /* Add space between cards */
+  }
+  
+  .customertable-card {
+    border: 1px solid #ccc;
+    padding: 20px;
+    /* Other styles for the card */
+  }
+  

@@ -1,0 +1,102 @@
+.order-form-container {
+  width: 100%;
+  height: 100%;
+}
+
+.order-form-heading {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.order-form-heading h4 {
+  font-size: medium;
+  color: rgb(5, 81, 213);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  /* padding-bottom: 2rem; */
+  /* font-size: 20px; */
+  font-weight: 900;
+}
+
+.order-total-section {
+  display: flex;
+  justify-content: space-evenly;
+  margin: 1.5rem;
+}
+.order-page-btn{
+    display: flex;
+    justify-content: space-evenly;
+}
+
+/* for mobile view */
+@media (max-width: 768px) {
+    .order-form-container {
+      width: 100%;
+      height: 100%;
+      overflow-x: auto; /* Enable horizontal scrolling */
+    }
+  
+    /* Adjusting heading size and alignment */
+    .order-form-heading h4 {
+      font-size: 18px; /* Change the font size */
+    }
+  
+    /* Adjust input fields to fit within the screen */
+    .barcode-section input[type='text'] {
+      width: calc(100% - 20px); /* Adjust width to fit the screen */
+      margin-bottom: 10px; /* Add some space between inputs */
+    }
+  
+    /* Adjust input and button alignment */
+    .Add-barcode-input {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+    }
+    .input-btns {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+    }
+    .input-container {
+      margin: 5px;
+    }
+    .button-containers {
+      margin-top: 10px;
+    }
+  
+    /* Scroll table horizontally */
+    .oreder-form-table {
+      overflow-x: auto; /* Enable horizontal scrolling for the table */
+      margin: 0 auto; /* Center the table */
+      width: 100%; /* Occupy full width */
+    }
+    
+    /* Adjust the table columns for mobile */
+    .oreder-form-table .ant-table table {
+      width: max-content; /* Use max-content for the table width */
+    }
+  
+    /* Adjust order total section */
+    .order-total-section {
+      flex-direction: column;
+      align-items: center;
+      margin: 1rem 0;
+    }
+    .order-total-section p {
+      margin: 0.5rem 0;
+    }
+  
+    /* Adjust order page buttons */
+    .order-page-btn {
+      flex-direction: column;
+      align-items: center;
+      margin-bottom: 1rem;
+    }
+    .order-page-btn button {
+      margin: 5px;
+      width: 80%; /* Adjust button width */
+    }
+  }
+      

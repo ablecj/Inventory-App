@@ -260,7 +260,7 @@ const BillingPage = () => {
             <SaveOrder saveOrderPopUp={saveOrderPopUp} closeSaveOrder={closeSaveOrder}  />
             <PhonePopUp phonePopUp={phonePopUp} closePhonePopUp={closePhonePopUp} />
             <PaymentModePopUP paymentPopUp={paymentPopUp} closePaymentPopUp={closePaymentPopUp} />
-          <BillPopUp billPopUp={billPopUp} closeBillPopUp={closeBillPopUp} />
+            <BillPopUp billPopUp={billPopUp} closeBillPopUp={closeBillPopUp} />
           </div>
         </div>
       </DefaultLayout>

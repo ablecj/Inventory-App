@@ -1,0 +1,192 @@
+.purchase-accnt-container{
+    width: 100%;
+    height: 100%;
+    padding: 10px;
+    overflow-x: auto; /* Enable horizontal scrolling */
+}
+.purchase-header{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.purchase-header h4{
+    display: flex;
+    text-align: center;
+    justify-content: center;
+    color: rgb(5, 81, 213);
+    font-size: 23px;
+    font-style: italic;
+}
+.purchse-content{
+    width: 100%;
+    height: fit-content;
+}
+/* list vendor drop-down */
+.dropdown-container{
+    display: flex;
+    justify-content: space-between;
+
+}
+/* Styles for the dropdown container */
+.list-vendor-dropdown {
+    display: inline-block;
+    margin-bottom: 15px;
+  }
+  
+  /* Styles for the label */
+  .list-vendor-dropdown label {
+    display: block;
+    margin-bottom: 5px;
+    font-weight: bold;
+  }
+  
+  /* Styles for the select element */
+  .list-vendor-dropdown select {
+    padding: 8px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    font-size: 14px;
+    width: 200px; /* Adjust the width as needed */
+    /* You can add more styles based on your design */
+  }
+  
+  /* Styles for the options in the dropdown */
+  .list-vendor-dropdown select option {
+    font-size: 14px;
+    /* Add more styles if necessary */
+  }
+  
+  /* select vendor drop down  */
+  .select-vendor-dropdown{
+    display: inline-block;
+    margin-bottom: 15px;
+  }
+  .select-vendor-dropdown label {
+    display: block;
+    margin-bottom: 5px;
+    font-weight: bold;
+  }
+  .select-vendor-dropdown select {
+    padding: 8px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    font-size: 14px;
+    width: 200px; /* Adjust the width as needed */
+    /* You can add more styles based on your design */
+  }
+  .select-vendor-dropdown select option {
+    font-size: 14px;
+    /* Add more styles if necessary */
+  }
+
+  .purchase-card-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+  }
+  .purchase-card {
+    width: calc(33.33% - 10px); /* Adjust width for three columns with spacing */
+    margin-bottom: 10px; /* Add spacing between rows */
+    box-sizing: border-box; /* Include padding and border in width calculation */
+  }
+  .card-container{
+    flex: 0 0 calc(33.33% - 20px);
+  }
+  .purchase-head {
+    margin-top: 20px;
+    display: flex;
+    gap: 20px;
+  }
+  
+  .purchase-head h3 {
+    flex: 1; /* Distribute available space equally */
+    text-align: center;
+    margin-right: 85px;
+  }
+
+/* .Today,
+.Month,
+.Year {
+  width: calc(33.33% - 10px); 
+  text-align: center;
+  margin-bottom: 10px; 
+} */
+  /* pending bill details */
+  .pending-bill{
+    position: relative;
+    width: 100%;
+    height: 100%;
+    margin-top: 20px;
+    left: 80px;
+  }
+
+  /* purchase bill Table  */
+.pending-bill-table{
+    margin-top: 20px;
+}
+
+/* mobile view */
+/* Existing CSS for desktop */
+
+/* Example media query for mobile view */
+@media (max-width: 768px) {
+    .purchase-accnt-container {
+      padding: 10px; /* Adjust padding for smaller screens */
+      overflow-x: auto;
+    }
+  
+    /* Adjustments for dropdowns */
+    .list-vendor-dropdown,
+    .select-vendor-dropdown {
+      width: 100%; /* Make dropdowns full width on mobile */
+      margin-bottom: 10px; /* Adjust margin for smaller spacing */
+    }
+    .dropdown-container{
+      display: flex;
+      flex-direction: column;
+    }
+  
+    /* Adjustments for cards */
+    .purchase-card-container {
+      display: flex;
+      justify-content: space-between;
+      flex-wrap: wrap;
+    }
+    /* .horizontal-scroll-container {
+      display: flex;
+      flex-direction: column;
+      overflow-x: auto;
+    }
+    .Today,
+    .Month,
+    .Year {
+      flex-basis: calc(33.33% - 10px); 
+      text-align: center;
+      margin-bottom: 10px;
+    } */
+    .purchase-card {
+      flex-basis: calc(33.33% - 10px); /* Adjust width for three columns with spacing */
+      margin-bottom: 10px; /* Add spacing between rows */
+    } 
+  
+    /* Adjustments for purchase head */
+    .purchase-head {
+      display: flex;
+      justify-content: space-between;
+      margin-bottom: 10px; /* Stack headings in a single column */
+    }
+  
+    /* Adjustments for pending bill */
+    .pending-bill {
+      left: 0; /* Reset left position */
+    }
+    .pending-bill-table{
+      padding: 10px;
+      overflow-x: auto;
+    }
+  }
+  
+
+
+
+

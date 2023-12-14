@@ -69,6 +69,7 @@ const dataSource = [
   ];
 
   return (
+    <div className="damage-Item-Layout">
     <InventoryLayout>
       <div className="damage-item-container">
         <div className="damage-heading">
@@ -121,6 +122,7 @@ const dataSource = [
         </div>
       </div>
     </InventoryLayout>
+    </div>
   );
 };
 

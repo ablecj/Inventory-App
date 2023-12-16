@@ -55,5 +55,14 @@
   }
 
   
+/* mobile view */
 
+@media only screen and (max-width: 768px) {
+
+  .ant-layout.ant-layout-has-sider{
+    height: 100%;  
+}
+
+
+}
   

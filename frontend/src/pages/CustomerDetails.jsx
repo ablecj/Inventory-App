@@ -2,12 +2,13 @@
 import React from "react";
 import DefaultLayout from "../components/DefaultLayout";
 import "../styles/CustomerDetails.css";
+import { Button } from "antd";
 
 const CustomerDetails = () => {
   const cardData = [
-    { title: "Today", content: ["Total Sale", "Bill", "Amount"] },
-    { title: "Month", content: ["Total Sale", "Bill", "Amount"] },
-    { title: "Year", content: ["Total Sale", "Bill", "Amount"] },
+    { title: "Today", content: ["Total Sale", "Bill:", "Amount:"] },
+    { title: "Month", content: ["Total Sale", "Bill:", "Amount:"] },
+    { title: "Year", content: ["Total Sale", "Bill:", "Amount:"] },
   ];
 
   return (
@@ -35,6 +36,20 @@ const CustomerDetails = () => {
                 </div>
               ))}
             </div>
+          </div>
+          <div className="customer-report">
+                <div className="customer-report-content">
+                  <p>Pending Bill </p>
+                  <p>Report </p>
+                  <p> From </p>
+                  <p> To</p>
+                </div>
+          </div>
+          <div className="customer-report-footer">
+              <p>Bill</p>
+              <p>Date</p>
+              <p>Amount</p>
+              <Button type="primary">Pay</Button>
           </div>
         </div>
       </div>

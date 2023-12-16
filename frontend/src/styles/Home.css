@@ -23,6 +23,7 @@
       width: 150px;
       display: flex;
       flex-direction: column;
+      height: fit-content;
      
     }
     
@@ -33,14 +34,4 @@
     }
   } 
 
-  /* .section {
-    padding: 20px; 
-    background-color: #ffffff;
-    border-radius: 8px; 
-    box-shadow: 0 0 5px rgba(0, 0, 0, 0.1); 
-  }
-  .section:hover{
-    background-color: rgba(102, 98, 105, 0.313);
-  } */
-  
   

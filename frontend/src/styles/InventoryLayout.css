@@ -57,19 +57,6 @@
   border-radius: 20px;
 }
 
-/* Media query for mobile devices */
-/* @media (max-width: 768px) {
-  .button-container {
-    flex-direction: column; 
-  }
-
-  .button-container button {
-    flex: 1; 
-    width: 100%;
-    margin-bottom: 10px; 
-  }
-} */
-
 /* layout section div styling */
 .layout-section {
   margin-top: 15px;

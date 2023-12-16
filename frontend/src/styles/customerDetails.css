@@ -1,67 +1,190 @@
-.customer-details-container{
-    height: 100%;
-    width: 100%;
+/* Common styles */
+.customer-details-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 100%;
+  padding: 20px;
 }
 
-.customerdetail-heading{
-    display: flex;
-    justify-content: center;
-    align-items: center;
-}
-.customerdetail-heading h4{
-    display: flex;
-    text-align: center;
-    justify-content: center;
-    color: rgb(5, 81, 213);
-    font-size: 23px;
-    font-style: italic;
+.customerdetail-heading h4 {
+  color: rgb(5, 81, 213);
+  font-size: 23px;
+  font-style: italic;
+  text-align: center;
 }
 
-/* .customerdetails{
-    margin-top: 25px;
-   
+.customerdetail-content,
+.customer-report {
+  width: 100%;
+  max-width: 800px;
+  padding: 20px;
+  margin-bottom: 20px;
 }
-.customerdetails p{
-    margin: 5px;
-    color:#043b8d;
-    font-weight: 500;
-    font-size: 14px;
-} */
-/* .customerdetail-content{
-    display: flex;
-    margin: 20px;
-} */
 
-.customerdetail-content {
-    margin-top: 25px;
+.customerdetails {
+  display: flex;
+  justify-content: space-around;
+  margin: 20px 0 20px 0;
+  /* flex-direction: column;
+  gap: 25px; */
+}
+
+.customerdetails p {
+  margin: 0 10px 0 10px;
+  color: #043b8d;
+  font-weight: 500;
+  font-size: 14px;
+}
+
+.customertable {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+}
+
+.customertable-content {
+  width: 100%;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+}
+
+.customertable-card {
+  flex: 1 0 100px; /* Adjust card width as needed */
+  background-color: rgba(206, 236, 244, 0.916);
+  border: 1px solid #302f2f;
+  padding: 10px;
+  transition: box-shadow 0.3s ease;
+  box-shadow: none;
+  margin-top: 30px;
+}
+
+.customertable-card:hover {
+  box-shadow: 0 10px 15px 0 rgba(0, 0, 0, 0.7);
+}
+
+.customercard-content p {
+  margin: 5px 0;
+}
+
+/* Customer report styles */
+.customer-report {
+  display: flex;
+  flex-direction: column;
+  margin-top: 20px;
+  background-color: rgba(206, 236, 244, 0.916);
+  padding: 20px;
+}
+
+.customer-report-content {
+  display: flex;
+  justify-content: space-around;
+  margin: 20px 0 20px 0;
+  /* flex-direction: column;
+  gap: 10px; */
+}
+
+.customer-report-content p {
+  margin: 0;
+  color: #043b8d;
+  font-weight: 500;
+  font-size: 14px;
+}
+
+.customer-report-footer{
+  display: flex;
+ justify-content: space-around;
+  margin-top: 20px;
+  background-color: rgba(206, 236, 244, 0.916);
+  padding: 20px;
+}
+
+.customer-report-footer p{
+  margin: 0;
+  color: #043b8d;
+  font-weight: 500;
+  font-size: 14px;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* Media query for mobile view */
+@media only screen and (max-width: 768px) {
+  .customer-details-container {
     display: flex;
-    /* justify-content: space-between; */
-    align-items: flex-start; /* Align items at the start of the cross axis */
+    flex-direction: column; /* Stack items vertically */
+    align-items: center; /* Center items horizontally */
   }
-  
-  .customerdetails{
-    flex-basis: 35%;
+  .customerdetail-content {
+    display: flex;
+    flex-direction: column;
   }
-  .customerdetails p{
-    margin-bottom: 25px;
-    color:#043b8d;
-    font-weight: 500;
-    font-size: 14px;
-}
   .customertable {
-    display: flex;
-    flex-basis: 55%; /* Adjust the width of each column as needed */
+    flex-basis: 100%; /* Cards take up full width in mobile view */
   }
-  
+
   .customertable-content {
-    display: flex;
-    /* Arrange cards vertically */
-    gap: 20px; /* Add space between cards */
+    flex-direction: column; /* Display cards vertically */
   }
-  
+
   .customertable-card {
-    border: 1px solid #ccc;
-    padding: 20px;
-    /* Other styles for the card */
+    width: 100%;
+    margin-bottom: 20px; /* Add space between cards */
   }
   
+
+    /* Stack customer details and cards vertically */
+    .customerdetails,
+    .customertable {
+      width: 100%; /* Take up full width */
+    }
+  
+    .customerdetails p {
+      /* margin-bottom: 15px;  */
+      margin: 0 10px 0 10px;
+    }
+  
+    .customertable {
+      margin-top: 20px; /* Add space between details and cards */
+    }
+
+    .customer-report-content,
+  .customer-report-footer {
+    display: flex;
+    flex-direction: column;
+    align-items: center; /* Align items to the center */
+    padding: 10px; /* Adjust padding for smaller screens */
+    background-color: rgba(206, 236, 244, 0.916);
+  }
+
+  /* customer content */
+
+  .customer-report-content p,
+  .customer-report-footer p {
+    margin: 10px 0; /* Adjust vertical margin for spacing */
+    color: #043b8d;
+    font-weight: 500;
+    font-size: 14px;
+    text-align: center; /* Center text */
+  }
+
+  .customer-report-footer {
+    margin-top: 10px; /* Adjust top margin */
+  }
+
+  .customer-report-footer button {
+    margin-top: 15px; /* Adjust space for the button */
+  }
+}
+ 

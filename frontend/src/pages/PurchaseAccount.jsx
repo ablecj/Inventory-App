@@ -116,7 +116,7 @@ const PurchaseAccount = () => {
                 </div>
               ))}
             </div>
-            {/* ... other content ... */}
+            
          
           {/* pending bill */}
           <div className="pending-bill">

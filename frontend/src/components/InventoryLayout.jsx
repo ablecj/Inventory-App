@@ -20,6 +20,48 @@ const InventoryLayout = ({ children }) => {
   } = theme.useToken();
   const location = useLocation();
   const { pathname } = location;
+  
+  // MenuItems 
+  const MenuItems = [
+    {
+      key: '/inventory',
+      path: '/inventory',
+      title: 'Inventory Update',
+      icon: <UserOutlined />
+    },
+    {
+      key: '/purchase-bill',
+      path: '/purchase-bill',
+      title: 'Purchase Bill Update',
+      icon: <UserOutlined />
+    },
+    {
+      key: '/vendor-account',
+      path: '/vendor-account',
+      title: 'Vendor Account',
+      icon: <VideoCameraOutlined />
+    },
+    {
+      key: '/customer-Account',
+      path: '/customer-Account',
+      title: 'Customer Account',
+      icon: <UploadOutlined />
+    },
+    {
+      key: '/inventory-items',
+      path: '/inventory-items',
+      title: 'Inventory Items',
+      icon: <UploadOutlined />
+    },
+    {
+      key: '/damage-items',
+      path: '/damage-items',
+      title: 'Damage Items',
+      icon:  <UploadOutlined />
+    }
+  ]
+
+
   return (
     <div className="inventoryLayout-Header">
       <Layout>
@@ -27,17 +69,13 @@ const InventoryLayout = ({ children }) => {
           <div className="demo-logo-vertical">
             <h3 className="sidebar_header">Billing App</h3>
           </div>
-
-          <Menu theme="dark" mode="inline" defaultSelectedKeys={[pathname]}>
+          {/* <Menu theme="dark" mode="inline" defaultSelectedKeys={[pathname]}>
             <Menu.Item key="/inventory" icon={<UserOutlined />}>
               <Link to="/inventory">Inventory update</Link>
             </Menu.Item>
             <Menu.Item key="/purchase-bill" icon={<UserOutlined />}>
               <Link to="/purchase-bill">Purchase Bill update</Link>
             </Menu.Item>
-            {/* <Menu.Item key="3" icon={<UserOutlined />}>
-              <Link to="/inventory">Inventory category</Link>
-            </Menu.Item> */}
             <Menu.Item key="/vendor-account" icon={<VideoCameraOutlined />}>
               <Link to="/vendor-account">Vendor Account</Link>
             </Menu.Item>
@@ -50,7 +88,16 @@ const InventoryLayout = ({ children }) => {
             <Menu.Item key="/damage-items" icon={<UploadOutlined />}>
               <Link to="/damage-items">Damage Items</Link>
             </Menu.Item>
-          </Menu>
+          </Menu> */}
+
+          {/* MenuItes Maping  */}
+          <Menu theme="dark" mode="inline" defaultSelectedKeys={[pathname]}>
+          {MenuItems.map((item) => (
+            <Menu.Item key={item.key} icon={item.icon}>
+              <Link to={item.path}>{item.title}</Link>
+            </Menu.Item>
+          ))}
+        </Menu>
         </Sider>
         <Layout>
           <Header

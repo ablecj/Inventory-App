@@ -7,7 +7,6 @@ import {
   MenuUnfoldOutlined,
   UploadOutlined,
   UserOutlined,
-  VideoCameraOutlined,
 } from "@ant-design/icons";
 import { Layout, Menu, Button, theme } from "antd";
 import { Link, useLocation } from "react-router-dom";
@@ -22,17 +21,61 @@ const DefaultLayout = ({ children }) => {
 
   // uselocation
   const location = useLocation();
-  const {pathname} = location;
+  const { pathname } = location;
+
+  // menu itemms
+  const menuItems = [
+    { key: "/",
+     path: "/", 
+     title: "Home", 
+     icon: <UserOutlined /> 
+    },
+    {
+      key: "/billing-page",
+      path: "/billing-page",
+      title: "Billing",
+      icon: <UserOutlined />,
+    },
+    {
+      key: "/inventory",
+      path: "/inventory",
+      title: "Inventory",
+      icon: <UserOutlined />,
+    },
+    {
+      key: "/order-form",
+      path: "/order-form",
+      title: "Order form",
+      icon: <UploadOutlined />,
+    },
+    {
+      key: "/purchase-account",
+      path: "/purchase-account",
+      title: "Purchase A/c",
+      icon: <UploadOutlined />,
+    },
+    {
+      key: "/sales",
+      path: "/sales",
+      title: "Sales A/C",
+      icon: <UserOutlined />,
+    },
+    {
+      key: "/customer-details",
+      path: "/customer-details",
+      title: "customer A/c",
+      icon: <UserOutlined />,
+    },
+  ];
 
   return (
-    
     <Layout>
       <Sider trigger={null} collapsible collapsed={collapsed}>
         <div className="demo-logo-vertical">
           <h3 className="sidebar_header">Billing App</h3>
         </div>
 
-        <Menu theme="dark" mode="inline" defaultSelectedKeys={[pathname]}>
+        {/* <Menu theme="dark" mode="inline" defaultSelectedKeys={[pathname]}>
           <Menu.Item key="/" icon={<UserOutlined />}>
             <Link to="/">Home</Link>
           </Menu.Item>
@@ -69,6 +112,15 @@ const DefaultLayout = ({ children }) => {
           <Menu.Item key="11" icon={<UploadOutlined />}>
             <Link to="/nav11">Invoice A/c</Link>
           </Menu.Item>
+        </Menu> */}
+
+        {/* new code for the menu links */}
+        <Menu theme="dark" mode="inline" defaultSelectedKeys={[pathname]}>
+          {menuItems.map((item) => (
+            <Menu.Item key={item.key} icon={item.icon}>
+              <Link to={item.path}>{item.title}</Link>
+            </Menu.Item>
+          ))}
         </Menu>
       </Sider>
       <Layout>
@@ -113,7 +165,6 @@ const DefaultLayout = ({ children }) => {
         </Content>
       </Layout>
     </Layout>
-   
   );
 };
 

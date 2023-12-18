@@ -1,63 +1,96 @@
-.vendor-container{
-    width: 100%;
-    height: 100%;
+.vendor-container {
+  width: 100%;
+  height: 100%;
 }
 
-.vendor-heading{
-    display: flex;
-    justify-content: center;
-    align-items: center;
+.vendor-heading {
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
-.vendor-heading h4{
-    font-size: medium;
-    color: rgb(5, 81, 213);
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    padding-bottom: 2rem;
-    /* font-size: 20px; */
-    font-weight: 900;
+.vendor-heading h4 {
+  font-size: medium;
+  color: rgb(5, 81, 213);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding-bottom: 2rem;
+  /* font-size: 20px; */
+  font-weight: 900;
 }
 
 /* vendor account content section  */
-.vendor-content{
-    width: 100%;
-    height: fit-content;
-    /* position: relative; */
+.vendor-content {
+  width: 100%;
+  height: fit-content;
+  /* position: relative; */
 }
 
 /* vendor input */
 .input-container {
-    display: flex;
-    flex-direction: column;
-    flex-wrap: wrap; /* Allow items to wrap to the next line if needed */
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap; /* Allow items to wrap to the next line if needed */
+}
+
+.input-item {
+  margin-right: 20px; /* Adjust spacing between label-input pairs */
+  margin-bottom: 20px; /* Add bottom margin for separation */
+  display: flex;
+  align-items: center; /* Align items vertically */
+  width: 100%;
+}
+.input-item input {
+  width: 60%;
+}
+
+/* Style for labels */
+.input-item label {
+  width: 120px; /* Adjust label width as needed */
+  margin-right: 10px; /* Add some space between label and input */
+}
+
+.invetory-popup-btn {
+  margin-left: 70%;
+}
+
+/* Media query for mobile view */
+@media (max-width: 767px) {
+  .vendor-container {
+    height: 100vh; /* Set full height of the viewport for mobile */
   }
-  
+
+  .vendor-heading h4 {
+    font-size: 18px; /* Adjust font size for smaller screens */
+    padding-bottom: 1rem; /* Reduce padding for smaller screens */
+  }
+
+  .vendor-content {
+    padding: 0 10px; /* Adjust padding for smaller screens */
+  }
+
   .input-item {
-    margin-right: 20px; /* Adjust spacing between label-input pairs */
-    margin-bottom: 20px; /* Add bottom margin for separation */
-    display: flex;
-    align-items: center; /* Align items vertically */
-    width: 100%;
+    margin-right: 0; /* Remove right margin for labels in mobile view */
+    margin-bottom: 3rem; /* Adjust bottom margin for smaller screens */
   }
-  .input-item input{
-    width: 60%;
+  .input-item:last-child {
+    margin-bottom: 0;
   }
-  
-  /* Style for labels */
+
+  .input-item input {
+    width: calc(100% - 110px); /* Full width for inputs in mobile view */
+    margin-left: 10px;
+  }
+
   .input-item label {
-    width: 120px; /* Adjust label width as needed */
-    margin-right: 10px; /* Add some space between label and input */
+    width: 100px; /* Set a fixed width for labels */
+    margin-right: 0; /* Adjust margin between label and input */
+    text-align: right; /* Align text in labels to the right */
+    flex-shrink: 0; /* Reduce margin for labels and inputs in mobile view */
   }
 
-  .invetory-popup-btn{
-    margin-left: 70%;
+  .invetory-popup-btn {
+    margin-left: 0; /* Reset margin for the button in mobile view */
+    text-align: end; /* Center-align the button in mobile view */
   }
-  
-
-
-
-
-
-
-
+}

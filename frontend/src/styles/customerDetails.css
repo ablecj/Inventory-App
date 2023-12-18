@@ -111,14 +111,6 @@
 
 
 
-
-
-
-
-
-
-
-
 /* Media query for mobile view */
 @media only screen and (max-width: 768px) {
   .customer-details-container {
@@ -131,6 +123,7 @@
     flex-direction: column;
   }
   .customertable {
+    margin-top: 20px; 
     flex-basis: 100%; /* Cards take up full width in mobile view */
   }
 
@@ -155,9 +148,6 @@
       margin: 0 10px 0 10px;
     }
   
-    .customertable {
-      margin-top: 20px; /* Add space between details and cards */
-    }
 
     .customer-report-content,
   .customer-report-footer {

@@ -2,35 +2,36 @@
 import React, { useEffect, useState } from "react";
 import DefaultLayout from "../components/DefaultLayout";
 import "../styles/sales.css";
-// import Cards from "../components/Cards";
-import { Button, Card,  Table } from "antd";
+import { Button,Table } from "antd";
 
 const SalesAccount = () => {
-  const cardDatas = [
-    {
-      titles: ["Total Purchase", "Additional Title 1"],
-      content: "Content for Card 1",
-    },
-    {
-      titles: ["Total Purchase", "Additional Title 2"],
-      content: "Content for Card 2",
-    },
-    {
-      titles: ["Total Purchase", "Additional Title 3"],
-      content: "Content for Card 3",
-    },
-    // Existing cards...
-  ];
+  // const cardDatas = [
+  //   {
+  //     titles: ["Total Purchase", "Additional Title 1"],
+  //     content: "Content for Card 1",
+  //   },
+  //   {
+  //     titles: ["Total Purchase", "Additional Title 2"],
+  //     content: "Content for Card 2",
+  //   },
+  //   {
+  //     titles: ["Total Purchase", "Additional Title 3"],
+  //     content: "Content for Card 3",
+  //   },
+  //   // Existing cards...
+  // ];
 
   // Update data for existing cards or add new ones if needed
-  cardDatas[0].titles = ["New Title for Card 1", "Another Title"];
-  cardDatas[1].titles = ["New Title for Card 2", "Different Title"];
-  cardDatas[2].titles = ["New Title for Card 3", "Different Title"];
-  // Add more cards or update existing ones as needed...
-
-  // Add more cards or update existing ones as needed...
-
   const cardData = [
+    { title: "Today", content: ["Total Sale", "Bill:", "Amount:"] },
+    { title: "Month", content: ["Total Sale", "Bill:", "Amount:"] },
+    { title: "Year", content: ["Total Sale", "Bill:", "Amount:"] },
+  ]
+  // Add more cards or update existing ones as needed...
+
+  // Add more cards or update existing ones as needed...
+
+  const cardDatas = [
     { title: "Total Outstanding", content: ["Bill: 2", "Amount: 9545"] },
     { title: "Total Outstanding", content: ["Bill : 5", "Amount: 8000"] },
     { title: "Total Outstanding", content: ["Bill : 8", "Amount: 500"] },
@@ -94,38 +95,26 @@ const SalesAccount = () => {
     <DefaultLayout>
       <div className="sales-container">
         <div className="sales-heading">
-          <h4>Salces Account</h4>
+          <h4>Sales Account</h4>
         </div>
-        <div className="sales-content">
-          <div className="sales-head">
-            <h3 className="Today">Today</h3>
-            <h3 className="Month">Month</h3>
-            <h3 className="Year">Year</h3>
-          </div>
-          <div className="sales-card-container">
-            {cardDatas.map((card, index) => (
-              <div className="sales-card" key={index}>
-                <div className="card-container">
-                  <Card>
-                    {/* style={{ width: 170 }} */}
-                    <h6>Titles:</h6>
-                    <ul>
-                      {card.titles.map((title, titleIndex) => (
-                        <li key={titleIndex}>{title}</li>
-                      ))}
-                    </ul>
-                    <h6>Content:</h6>
-                    <p>{card.content}</p>
-                  </Card>
+        <div className="salestable">
+            <div className="salestable-content">
+              {cardData.map((card, index) => (
+                <div className="salestable-card" key={index}>
+                  <h3>{card.title}</h3>
+                  <div className="salescard-content">
+                    <p>{card.content[0]}</p>
+                    <p>{card.content[1]}</p>
+                    <p>{card.content[2]}</p>
+                  </div>
                 </div>
-              </div>
-            ))}
+              ))}
+            </div>
           </div>
-        
-        </div>
+
         <div className="outstanding-bill">
             <div className="outstanding-content">
-              {cardData.map((card, index) => (
+              {cardDatas.map((card, index) => (
                 <div className="outstanding-card" key={index}>
                   <h6>{card.title}</h6>
                   <div className="card-content">

@@ -2,7 +2,7 @@
 import React, { useEffect, useState } from "react";
 import DefaultLayout from "../components/DefaultLayout";
 import "../styles/purchaseAccount.css";
-import Cards from "../components/Cards";
+// import Cards from "../components/Cards";
 import { Button, Table } from "antd";
 
 const PurchaseAccount = () => {
@@ -19,14 +19,10 @@ const PurchaseAccount = () => {
   };
   // card data
   const cardData = [
-    { title: "Total Purchase", content: "Content for Card 1" },
-    { title: "Total Purchase", content: "Content for Card 2" },
-    { title: "Total Purchase", content: "Content for Card 3" },
-    { title: "Total paid", content: "Content for Card 4" },
-    { title: "Total paid", content: "Content for Card 5" },
-    { title: "Total paid", content: "Content for Card 6" },
-    // Add more objects for additional cards...
-  ];
+    { title: "Today", content: ["Total Sale", "Bill:", "Amount:"] },
+    { title: "Month", content: ["Total Sale", "Bill:", "Amount:"] },
+    { title: "Year", content: ["Total Sale", "Bill:", "Amount:"] },
+  ]
 
   // pending bill table
   const columns = [
@@ -104,18 +100,20 @@ const PurchaseAccount = () => {
           </div>
          
             {/* ... other content ... */}
-            <div className="purchase-head">
-              <h3 className="Today">Today</h3>
-              <h3 className="Month">Month</h3>
-              <h3 className="Year">Year</h3>
-            </div>
-            <div className="purchase-card-container">
+            <div className="purchasetable">
+            <div className="purchasetable-content">
               {cardData.map((card, index) => (
-                <div className="purchase-card" key={index}>
-                  <Cards title={card.title} content={card.content} />
+                <div className="purchasetable-card" key={index}>
+                  <h3>{card.title}</h3>
+                  <div className="purchasecard-content">
+                    <p>{card.content[0]}</p>
+                    <p>{card.content[1]}</p>
+                    <p>{card.content[2]}</p>
+                  </div>
                 </div>
               ))}
             </div>
+          </div>
             
          
           {/* pending bill */}

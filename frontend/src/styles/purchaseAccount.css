@@ -46,7 +46,6 @@
   border-radius: 4px;
   font-size: 14px;
   width: 200px; /* Adjust the width as needed */
-  /* You can add more styles based on your design */
 }
 
 /* Styles for the options in the dropdown */
@@ -78,30 +77,37 @@
   /* Add more styles if necessary */
 }
 
-.purchase-card-container {
+.customertable {
   display: flex;
   flex-wrap: wrap;
-  justify-content: space-between;
-}
-.purchase-card {
-  width: calc(33.33% - 10px); /* Adjust width for three columns with spacing */
-  margin-bottom: 10px; /* Add spacing between rows */
-  box-sizing: border-box; /* Include padding and border in width calculation */
-}
-.card-container {
-  flex: 0 0 calc(33.33% - 20px);
-}
-.purchase-head {
-  margin-top: 20px;
-  display: flex;
   gap: 20px;
 }
 
-.purchase-head h3 {
-  flex: 1; /* Distribute available space equally */
-  text-align: center;
-  margin-right: 85px;
+.purchasetable-content {
+  width: 100%;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
 }
+
+.purchasetable-card {
+  flex: 1 0 100px; /* Adjust card width as needed */
+  background-color: rgba(206, 236, 244, 0.916);
+  border: 1px solid #302f2f;
+  padding: 10px;
+  transition: box-shadow 0.3s ease;
+  box-shadow: none;
+  margin-top: 30px;
+}
+
+.purchasetable-card:hover {
+  box-shadow: 0 10px 15px 0 rgba(0, 0, 0, 0.7);
+}
+
+.purchasecard-content p {
+  margin: 5px 0;
+}
+
 
 /* pending bill details */
 .pending-bill {
@@ -126,6 +132,9 @@
     padding: 10px; /* Adjust padding for smaller screens */
     overflow-x: auto;
   }
+  .purchase-header{
+    margin-bottom: 10px;
+  }
 
   /* Adjustments for dropdowns */
   .list-vendor-dropdown,
@@ -138,41 +147,21 @@
     flex-direction: column;
   }
 
-  /* Adjustments for cards */
-  .purchase-card-container {
-    flex-direction: row; /* Display cards in a row */
-    flex-wrap: wrap;
-    justify-content: center; /* Center cards horizontally */
+  .purchasetable {
+    width: 100%;
+    margin-top: 20px; 
+    flex-basis: 100%; /* Cards take up full width in mobile view */
   }
 
-  .purchase-card {
-    flex: 0 0 auto;
-    width: 80px;
-    margin-right: 10px;
+  .purchasetable-content {
+    flex-direction: column; /* Display cards vertically */
   }
-  .purchase-head {
-    display: flex;
-    justify-content: space-between;
-    align-items: center; /* Align headings vertically */
-    margin-bottom: 10px;
+
+  .purchasetable-card {
+    width: 100%;
+    margin-bottom: 20px; /* Add space between cards */
   }
-  .purchase-head h3 {
-    margin: 0;
-  }
-  .card-container {
-    display: flex;
-    overflow-x: auto;
-    width: calc(100% - 20px); /* Adjust width to fit within the container */
-    margin: 0 auto;
-  }
-  /* Align headings in a row */
-  .Today,
-  .Month,
-  .Year {
-    flex: 0 0 calc(33.33% - 20px);
-    margin: 0 5px;
-    text-align: center;
-  }
+ 
 
   /* Adjustments for pending bill */
   .pending-bill {

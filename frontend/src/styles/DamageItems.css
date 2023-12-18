@@ -70,6 +70,7 @@
 /* Mobile-specific styles */
 @media screen and (max-width: 768px) {
   .damage-item-container {
+    height: 100vh;
     padding: 10px; /* Adjust padding as needed */
     box-sizing: border-box;
     padding-bottom: 0; 

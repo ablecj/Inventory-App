@@ -1,69 +1,136 @@
-.sales-container{
-    width: 100%;
-    height: 100%;
+.sales-container {
+  width: 100%;
+  height: 100%;
 }
 /* .sles-heading{
     display: flex;
 } */
-.sales-heading h4{
-    display: flex;
-    text-align: center;
-    justify-content: center;
-    color: rgb(5, 81, 213);
-    font-size: 23px;
-    font-style: italic;
+.sales-heading h4 {
+  display: flex;
+  text-align: center;
+  justify-content: center;
+  color: rgb(5, 81, 213);
+  font-size: 23px;
+  font-style: italic;
 }
 
-.sales-content {
-    display: grid;
-    grid-template-columns: repeat(3, 1fr);
-    gap: 20px;
-    align-items: start; /* Align items at the start */
+.salestable-content {
+  width: 100%;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+}
+
+.salestable-card {
+  flex: 1 0 100px; /* Adjust card width as needed */
+  background-color: rgba(206, 236, 244, 0.916);
+  border: 1px solid #302f2f;
+  padding: 10px;
+  transition: box-shadow 0.3s ease;
+  box-shadow: none;
+  margin-top: 30px;
+}
+
+.salestable-card:hover {
+  box-shadow: 0 10px 15px 0 rgba(0, 0, 0, 0.7);
+}
+
+.salescard-content p {
+  margin: 5px 0;
+}
+
+.outstanding-bill {
+  margin-top: 20px;
+  flex-direction: column;
+  display: flex;
+}
+
+.outstanding-content {
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+}
+.outstanding-content p{
+  margin: 5px 0;
+}
+
+.outstanding-card {
+  flex: 1 0 100px; /* Adjust card width as needed */
+  background-color: rgba(206, 236, 244, 0.916);
+  border: 1px solid #302f2f;
+  padding: 25px;
+  transition: box-shadow 0.3s ease;
+  box-shadow: none;
+  margin-top: 30px;
+}
+.outstanding-card:hover{
+  box-shadow: 0 10px 15px 0 rgba(0, 0, 0, 0.7);
+}
+
+/* table */
+.credit-bill-customer {
+  margin-top: 25px;
+  overflow-x: auto;
+}
+
+/* Media query for mobile view */
+@media (max-width: 768px) {
+  .sales-content {
+    margin: 0;
   }
-  
   .sales-head {
-    grid-column: 1 / span 3; /* Span all three columns */
-    display: grid;
-    grid-template-columns: repeat(3, 1fr);
-    gap: 70px;
-  }
-  .Today{
-    margin-left: 20px;
+    display: flex;
+    flex-direction: row; /* Revert to horizontal layout */
+    gap: 70px; /* Restore original gap for larger screens */
   }
 
-  .sales-card-container {
-    display: grid;
-    grid-template-columns: repeat(3, 1fr);
-    gap: 150px;
-  }
-  
-  .sales-card {
+  .salestable {
     width: 100%;
-  }
-  
-  .outstanding-bill {
-    margin-top: 20px; /* Add space between sales-card-container and outstanding-bill */
-    flex-direction: column;
-    display: flex;
-  }
-  
-  /* Style for outstanding-content and its card */
-  .outstanding-content {
-    display: flex;
-    justify-content: space-between;
-    
-    
-    /* Add any other necessary styles */
-  }
-  
-  .outstanding-card {
-    border: 1px solid #141313;
-    padding: 20px;
-    margin-right: 110px;
-    /* Adjust dimensions and other styles as needed */
-  }
-  /* table */
-  .credit-bill-customer{
-    margin-top: 25px;
+    margin-top: 20px;
+    flex-basis: 100%; /* Cards take up full width in mobile view */
   }
 
+  .salestable-content {
+    flex-direction: column; /* Display cards vertically */
+  }
+
+  .salestable-card {
+    width: 100%;
+    margin-bottom: 20px; /* Add space between cards */
+  }
+  .salestable-card:hover {
+    box-shadow: 0 10px 15px 0 rgba(0, 0, 0, 0.7);
+  }
+
+  .outstanding-content {
+    flex-direction: column;
+  }
+
+  .outstanding-card {
+    width: 100%;
+    margin-bottom: 20px; 
+  }
+  .outstanding-card:hover{
+    box-shadow: 0 10px 15px 0 rgba(0, 0, 0, 0.7);
+  }
+
+  /* responsive for mobile view */
+  .credit-bill-customer {
+    overflow-x: auto; /* Add horizontal scroll for small screens */
+    display: block; /* Display as block for scroll */
+    width: 100%; /* Set width to fill the container */
+  }
+
+  .credit-bill-customer table {
+    width: 100%; /* Set table width to fill the container */
+  }
+
+  /* Optionally, you can adjust column widths or styles */
+  .credit-bill-customer th,
+  .credit-bill-customer td {
+    white-space: nowrap; /* Prevent text wrapping */
+  }
+}

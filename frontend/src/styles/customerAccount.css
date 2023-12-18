@@ -31,6 +31,7 @@
 /* CSS for mobile view */
 @media screen and (max-width: 768px) {
   .customer-accnt-container {
+    height: 100vh;
     padding: 20px; /* Add padding to the container for better spacing */
   }
 

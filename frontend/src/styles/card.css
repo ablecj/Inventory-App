@@ -12,7 +12,7 @@
 
   @media screen and (max-width: 768px){
   .ant-card-bordered{
-    height: 170px;
+    height: fit-content;
   }
 
   }

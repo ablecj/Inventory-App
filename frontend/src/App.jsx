@@ -17,6 +17,7 @@ import PurchaseAccount from './pages/PurchaseAccount';
 import SalesAccount from './pages/SalesAccount';
 import CustomerDetails from './pages/CustomerDetails';
 import DebitNote from './pages/DebitNote';
+import CreditNote from './pages/CreditNote';
 
 const App = () => {
   return (
@@ -32,6 +33,7 @@ const App = () => {
         <Route path='/sales' element={<SalesAccount />} />
         <Route path='/customer-details' element={<CustomerDetails />} />
         <Route path='/debit-note' element={<DebitNote />} />
+        <Route path='/credit-note' element={<CreditNote />} />
         {/* inventory pages  */}
         <Route path='/purchase-bill' element={<PurchaseBillUpdate />} />
         <Route path='/customer-Account' element={<CustomerAccount />} />

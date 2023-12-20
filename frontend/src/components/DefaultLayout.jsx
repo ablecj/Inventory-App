@@ -72,6 +72,12 @@ const DefaultLayout = ({ children }) => {
       path: '/debit-note',
       title: 'Debit Note',
       icon: <AccountBookOutlined />
+    },
+    {
+      key: '/credit-note',
+      path: '/credit-note',
+      title: 'Credit Note',
+      icon: <AccountBookOutlined />
     }
   ];
 

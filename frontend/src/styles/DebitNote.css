@@ -14,4 +14,86 @@
     width: 100%;
     height: fit-content;
 }
+.Debit-select-dropdown{
+    margin-bottom: 1.5rem;
+}
+.Debit-select-dropdown select {
+    margin-top: 20px;
+    padding: 8px; 
+    font-size: 16px; 
+    border: 1px solid blue; 
+    border-radius: 4px;
+    width: 200px; 
+  }
+
+  .Debit-select-dropdown select:focus {
+    border-color: blue; 
+  }
+
+.item-Dropdown{
+    margin-bottom: 1.5rem;
+}
+
+.item-Dropdown label{
+    margin-right: 25px;
+}
+
+.item-Dropdown select{
+    margin-top: 20px;
+    padding: 8px; 
+    font-size: 16px; 
+    border: 1px solid blue; 
+    border-radius: 4px;
+    width: 200px;
+}
+.item-Dropdown select:focus {
+    border-color: blue; 
+}
+
+.Reason-Return{
+    margin-bottom: 1.5rem;
+}
+.Reason-Return label{
+    margin-right: 30px;
+}
+/* product ID */
+.product-id{
+    margin-bottom: 1.5rem;
+}
+.Quantity-Details{
+    margin-bottom: 1.5rem;
+}
+.Quantity-Details label{
+    margin-right: 30px;
+}
+.btn {
+    margin-top: 1.5rem;
+}
+
+
+/* CSS For Mobile View */
+@media (max-width: 768px) {
+    .Debit-select-dropdown select,
+    .item-Dropdown select,
+    .Reason-Return input[type='text'],
+    .product-id input[type='text'],
+    .Quantity-Details input[type='number'] {
+      width: 100%;
+      /* Adjust width as needed for mobile */
+    }
+  
+    .item-Dropdown label,
+    .Reason-Return label,
+    .Quantity-Details label {
+      margin-right: 0;
+      margin-bottom: 0.5rem;
+      display: block;
+      /* Adjust margins and display for mobile */
+    }
+  
+    .btn {
+      margin-top: 1rem;
+      /* Adjust margin for mobile */
+    }
+  }
 

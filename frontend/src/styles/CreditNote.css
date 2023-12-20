@@ -1,0 +1,119 @@
+.credit-note-container{
+    width: 100%;
+    height: 100%;
+}
+.credit-note-heading{
+    color: rgb(5, 81, 213);
+    font-size: 23px;
+    font-style: italic;
+    text-align: center;
+}
+.credit-note-content{
+    width: 100%;
+    height: fit-content;
+}
+
+/* Credit dropdown */
+.Credit-select-dropdown{
+    margin-bottom: 1.5rem;
+    margin-top: 1.5rem;
+}
+
+.Credit-select-dropdown select {
+    margin-top: 20px;
+    padding: 8px; 
+    font-size: 16px; 
+    border: 1px solid blue; 
+    border-radius: 4px;
+    width: 200px; 
+  }
+
+  .Credit-select-dropdown select:focus {
+    border-color: blue; 
+  }
+
+/* item Dropdown credit */
+.items-Dropdown-credit{
+    margin-bottom: 1.5rem;
+}
+
+.items-Dropdown-credit label{
+    margin-right: 25px;
+}
+
+.items-Dropdown-credit select{
+    margin-top: 20px;
+    padding: 8px; 
+    font-size: 16px; 
+    border: 1px solid blue; 
+    border-radius: 4px;
+    width: 200px;
+}
+.items-Dropdown-credit select:focus {
+    border-color: blue; 
+}
+
+.Reason-Return-credit{
+    margin-bottom: 1.5rem;
+}
+.Reason-Return-credit label{
+    margin-right: 30px;
+}
+/* product ID */
+.product-id-credit{
+    margin-bottom: 1.5rem;
+}
+.Quantity-Details-credit{
+    margin-bottom: 1.5rem;
+}
+.Quantity-Details-credit label{
+    margin-right: 30px;
+}
+
+.All-checkbox{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+}
+.btn {
+    margin-top: 1.5rem;
+}
+
+/* mobile view responsiveness */
+@media (max-width: 768px) {
+    /* Adjustments for mobile view */
+    .Credit-select-dropdown select,
+    .items-Dropdown-credit select,
+    .Reason-Return-credit input[type='text'],
+    .product-id-credit input[type='text'],
+    .Quantity-Details-credit input[type='number'] {
+      width: 100%;
+      /* Adjust width as needed for mobile */
+    }
+  
+    .items-Dropdown-credit label,
+    .Reason-Return-credit label,
+    .Quantity-Details-credit label {
+      margin-right: 0;
+      margin-bottom: 0.5rem;
+      display: block;
+      /* Adjust margins and display for mobile */
+    }
+  
+    .All-checkbox {
+      flex-direction: column;
+      align-items: center;
+      /* Update flex properties for mobile layout */
+    }
+  
+    .All-checkbox input[type='checkbox'] {
+      margin-bottom: 0.5rem;
+      /* Adjust checkbox margins for mobile */
+    }
+  
+    .btn {
+      margin-top: 1rem;
+      /* Adjust margin for mobile */
+    }
+  }
+

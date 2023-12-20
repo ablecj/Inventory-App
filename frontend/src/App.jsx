@@ -16,6 +16,7 @@ import OrderForm from './pages/OrderForm';
 import PurchaseAccount from './pages/PurchaseAccount';
 import SalesAccount from './pages/SalesAccount';
 import CustomerDetails from './pages/CustomerDetails';
+import DebitNote from './pages/DebitNote';
 
 const App = () => {
   return (
@@ -30,6 +31,7 @@ const App = () => {
         <Route path='/purchase-account' element={<PurchaseAccount />} />
         <Route path='/sales' element={<SalesAccount />} />
         <Route path='/customer-details' element={<CustomerDetails />} />
+        <Route path='/debit-note' element={<DebitNote />} />
         {/* inventory pages  */}
         <Route path='/purchase-bill' element={<PurchaseBillUpdate />} />
         <Route path='/customer-Account' element={<CustomerAccount />} />

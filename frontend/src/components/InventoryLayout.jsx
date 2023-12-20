@@ -69,27 +69,6 @@ const InventoryLayout = ({ children }) => {
           <div className="demo-logo-vertical">
             <h3 className="sidebar_header">Billing App</h3>
           </div>
-          {/* <Menu theme="dark" mode="inline" defaultSelectedKeys={[pathname]}>
-            <Menu.Item key="/inventory" icon={<UserOutlined />}>
-              <Link to="/inventory">Inventory update</Link>
-            </Menu.Item>
-            <Menu.Item key="/purchase-bill" icon={<UserOutlined />}>
-              <Link to="/purchase-bill">Purchase Bill update</Link>
-            </Menu.Item>
-            <Menu.Item key="/vendor-account" icon={<VideoCameraOutlined />}>
-              <Link to="/vendor-account">Vendor Account</Link>
-            </Menu.Item>
-            <Menu.Item key="/customer-Account" icon={<UploadOutlined />}>
-              <Link to="/customer-Account">Customer Account</Link>
-            </Menu.Item>
-            <Menu.Item key="/inventory-items" icon={<UploadOutlined />}>
-              <Link to="/inventory-items">Inventory Items</Link>
-            </Menu.Item>
-            <Menu.Item key="/damage-items" icon={<UploadOutlined />}>
-              <Link to="/damage-items">Damage Items</Link>
-            </Menu.Item>
-          </Menu> */}
-
           {/* MenuItes Maping  */}
           <Menu theme="dark" mode="inline" defaultSelectedKeys={[pathname]}>
           {MenuItems.map((item) => (

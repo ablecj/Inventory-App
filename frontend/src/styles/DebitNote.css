@@ -1,0 +1,17 @@
+.debit-note-container{
+    width: 100%;
+    height: 100%;
+}
+
+.debit-note-heading{
+    color: rgb(5, 81, 213);
+    font-size: 23px;
+    font-style: italic;
+    text-align: center;
+}
+
+.debit-note-content{
+    width: 100%;
+    height: fit-content;
+}
+

@@ -7,6 +7,7 @@ import {
   MenuUnfoldOutlined,
   UploadOutlined,
   UserOutlined,
+  AccountBookOutlined
 } from "@ant-design/icons";
 import { Layout, Menu, Button, theme } from "antd";
 import { Link, useLocation } from "react-router-dom";
@@ -66,6 +67,12 @@ const DefaultLayout = ({ children }) => {
       title: "customer A/c",
       icon: <UserOutlined />,
     },
+    {
+      key: '/debit-note',
+      path: '/debit-note',
+      title: 'Debit Note',
+      icon: <AccountBookOutlined />
+    }
   ];
 
   return (
@@ -74,46 +81,6 @@ const DefaultLayout = ({ children }) => {
         <div className="demo-logo-vertical">
           <h3 className="sidebar_header">Billing App</h3>
         </div>
-
-        {/* <Menu theme="dark" mode="inline" defaultSelectedKeys={[pathname]}>
-          <Menu.Item key="/" icon={<UserOutlined />}>
-            <Link to="/">Home</Link>
-          </Menu.Item>
-          <Menu.Item key="/billing-page" icon={<UserOutlined />}>
-            <Link to="/billing-page">Billing</Link>
-          </Menu.Item>
-          <Menu.Item key="/inventory" icon={<UserOutlined />}>
-            <Link to="/inventory">Inventory</Link>
-          </Menu.Item>
-          <Menu.Item key="4" icon={<VideoCameraOutlined />}>
-            <Link to="/nav4">Report</Link>
-          </Menu.Item>
-          <Menu.Item key="/order-form" icon={<UploadOutlined />}>
-            <Link to="/order-form">Order form</Link>
-          </Menu.Item>
-          <Menu.Item key="/purchase-account" icon={<UploadOutlined />}>
-            <Link to="/purchase-account">Purchase A/c</Link>
-          </Menu.Item>
-          <Menu.Item key="/sales" icon={<UploadOutlined />}>
-            <Link to="/sales">Sales</Link>
-          </Menu.Item>
-          <Menu.Item key="/customer-details" icon={<UploadOutlined />}>
-            <Link to="/customer-details">customer A/c</Link>
-          </Menu.Item>
-          <Menu.Item key="8" icon={<UploadOutlined />}>
-            <Link to="/nav8">Debit Note</Link>
-          </Menu.Item>
-          <Menu.Item key="9" icon={<UploadOutlined />}>
-            <Link to="/nav9">Credit Note</Link>
-          </Menu.Item>
-          <Menu.Item key="10" icon={<UploadOutlined />}>
-            <Link to="/nav10">Expence A/c</Link>
-          </Menu.Item>
-          <Menu.Item key="11" icon={<UploadOutlined />}>
-            <Link to="/nav11">Invoice A/c</Link>
-          </Menu.Item>
-        </Menu> */}
-
         {/* new code for the menu links */}
         <Menu theme="dark" mode="inline" defaultSelectedKeys={[pathname]}>
           {menuItems.map((item) => (

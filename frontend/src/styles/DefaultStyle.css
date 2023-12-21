@@ -12,20 +12,57 @@
 .ant-layout-sider{
     padding-top: 10px !important;
     border-radius: 10px !important;
+    background-image: linear-gradient(to right, #010046, #0905E2) !important;
+}
+.ant-menu-dark{
+  background-image: linear-gradient(to right, #010046, #0905E2) !important;
+}
+.ant-menu-item{
+  color: #ffffff;
 }
 .ant-menu-item a{
   text-decoration: none;
 }
+.ant-menu-item-selected {
+  background-color: #ffffff !important;
+  border-top-left-radius: 30px !important;
+  border-bottom-left-radius: 30px !important;
+}
+
+.ant-menu-item-selected >.ant-menu-title-content{
+  color: black;
+}
+
+.ant-menu-item-selected .ant-menu-item-icon{
+  color: black !important;
+}
+/* .ant-menu-dark.ant-menu-root.ant-menu-inline >.ant-menu-item-selected 
+>.ant-menu-title-content a ::before{
+  content: '';
+  position: absolute;
+  right: 0;
+  top: -50px;
+  width: 50px;
+  height: 50px;
+  background-color: red;
+  border-radius: 50%;
+  box-shadow: 35px 35px 0 10px var(--white);
+  pointer-events: none;
+} */
 
 /* style for the header */
 .ant-layout-header{
     box-shadow: 0 0 3px grey;
     border-radius: 8px;
     margin: 5px;
+    background-image: linear-gradient(to right, #010046, #0905E2);
 }
 /* collapse button */
 .ant-btn.ant-btn-icon-only{
   margin-left: -20px !important;
+}
+.ant-btn.ant-btn-icon-only .anticon{
+  font-size: 20px;
 }
 .Header .ant-btn {
     margin-left: 0; 
@@ -38,9 +75,10 @@
 }
 .header {
     margin: 0;
-    color: #043b8d;
-    font-size: 20px;
-    font-weight: 900;
+    color: #0905E2;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 21px;
+    font-weight: 700;
     flex: 1;
     text-align: center;
     justify-content: center;
@@ -50,10 +88,10 @@
     color: #ffffff;
     font-weight: 600;
     margin-top: 8px;
-    white-space: normal; /* Allow text to wrap onto new lines */
-    overflow: hidden; /* Hide overflowing text */
+    white-space: normal; 
+    overflow: hidden; 
   }
-
+  
   
 /* mobile view */
 

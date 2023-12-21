@@ -1,14 +1,23 @@
 .ant-card-bordered{
     width: 200px;
-    border: 1px solid rgb(24, 21, 21);
-    background-color: rgba(206, 236, 244, 0.916);
-    color: black;
+    border: 1px solid #fff;
+    background-image: linear-gradient(to right, #010046, #0905E2);
+    color: #fff;
     transition: box-shadow 0.3s; 
+    height: 120px;
 }
 
 .ant-card-bordered:hover {
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.8); /* Add the desired box-shadow on hover */
+    box-shadow: 0 4px 8px #0905E2; /* Add the desired box-shadow on hover */
   }
+
+  .card-container h6,p{
+      display: flex;
+      text-align: center;
+      justify-content: center;
+      align-items: center;
+  }
+
 
   @media screen and (max-width: 768px){
   .ant-card-bordered{

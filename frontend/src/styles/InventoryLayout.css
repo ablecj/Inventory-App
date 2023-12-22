@@ -18,14 +18,14 @@
 }
 
 .inventory-heading {
-  font-size: medium;
-  color: rgb(5, 81, 213);
   display: flex;
   align-items: center;
   justify-content: center;
   padding-bottom: 2rem;
-  /* font-size: 20px; */
-  font-weight: 900;
+  color: rgb(5, 81, 213);
+  font-size: 22px !important;
+  font-family: Arial, Helvetica, sans-serif;
+  font-weight: 500
 }
 
 .button-container {
@@ -35,9 +35,11 @@
 
 /* Styles for each button */
 .button-container button {
+  width: 140px;
+  height: 70px;
   flex: 1; /* Equal width for all buttons */
-  font-weight: 800;
-  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  font-weight: 600;
+  font-family: Arial, Helvetica, sans-serif;
   font-size: 0.75rem;
   padding: 10px 20px; /* Adjust padding as needed */
   margin: 0; /* Reset margin */
@@ -45,16 +47,16 @@
   border-width: 1px;
   border-radius: 5px;
   transition: border-radius 0.15s;
-  color: #001e2b;
+  color: #ffffff;
   stroke: #001e2b;
   fill: #001e2b;
   border-color: #001e2b;
-  background-color: #6c8dd5;
+  background-image: linear-gradient(to right, #010046, #0905E2);
 }
 
 /* Hover styles */
 .button-container button:hover {
-  border-radius: 20px;
+  border-radius: 15px;
 }
 
 /* layout section div styling */
@@ -89,32 +91,20 @@
 }
 
 
-/* .inventory-input input {
-  padding: 5px;
-  margin-top: 15px;
-  display: flex;
-}
-.inventory-input input:hover {
-  border: 1px solid #292a2b;
-}
-.inventory-input input:focus {
-  outline: none;
-  border: 1px solid #292a2b; 
-  box-shadow: 0 0 5px rgba(32, 34, 38, 0.708);
-} */
 .inventory-add{
   display: flex;
   justify-content: end;
-  margin-right: 15%;
+  margin-right: 19%;
   text-align: center;
+  margin-top: 25px;
 }
 
 .inventory-btn-add {
   width: 5rem;
   padding: 10px;
   margin-top: 10px;
-  font-weight: 800;
-  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  font-weight: 600;
+  font-family: Arial, Helvetica, sans-serif;
   font-size: 0.75rem;
   padding: 0.75rem;
   margin-top: 0.5rem;
@@ -122,32 +112,31 @@
   border-width: 1px;
   border-radius: 5px;
   transition: border-radius 0.15s;
-  color: #001e2b;
+  color: #ffffff;
   stroke: #001e2b;
   fill: #001e2b;
   border-color: #001e2b;
-  background-color: #6c8dd5;
+  background-image: linear-gradient(to right, #010046, #0905E2);
 }
 
 .inventory-btn-add:hover {
-  border-radius: 20px;
+  border-radius: 15px;
 }
 
 .add-new-item-btn {
-  font-weight: 800;
-  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  font-weight: 600;
+  font-family: Arial, Helvetica, sans-serif;
   font-size: 0.75rem;
-  /* margin: 10px 10px 0 100px; */
   padding: 10px;
   border: solid;
   border-width: 1px;
   border-radius: 5px;
   transition: border-radius 0.15s;
-  color: #001e2b;
+  color: #ffffff;
   stroke: #001e2b;
   fill: #001e2b;
   border-color: #001e2b;
-  background-color: #6c8dd5;
+  background-image: linear-gradient(to right, #010046, #0905E2);
   display: flex;
   align-items: flex-end;
 }
@@ -159,6 +148,13 @@
   display: flex;
   justify-content: start;
   margin-top: 20px;
+}
+
+/* footer btn container */
+.inventoryaddbtn{
+  display: flex;
+ gap: 40px;
+  flex-direction: row-reverse;
 }
 
 /* mobile view css property */

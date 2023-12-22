@@ -62,7 +62,7 @@ const DebitNote = () => {
     <DefaultLayout>
       <div className="debit-note-container">
         <div className="debit-note-heading">
-          <h4>Sales Return Debit Note</h4>
+          <h4 className="debitNote-h4">Sales Return Debit Note</h4>
         </div>
         <div className="debit-note-content">
           <div className="Debit-select-dropdown">

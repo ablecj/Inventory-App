@@ -287,15 +287,16 @@ const PurchaseBillUpdate = () => {
     <InventoryLayout>
       <div className="purchase-bill-container">
         <div className="purchase-heading">
-          <h4>Purchase Bill Update</h4>
+          <h4 className="PurchaseHeader-h4">Purchase Bill Update</h4>
         </div>
         <div className="purchase-bill-content">
           <div className="purchaseBill-btn">
-            <button>Scan item</button>
-            <button onClick={handleAddNewItem}>Add new item</button>
-            <button onClick={handlePurchaseCategory}>Create category</button>
-            <button onClick={handleScodePurchase}>Scode</button>
-            <button onClick={handleBarcodePopUp}>Barcode manually</button>
+            
+            <button className="Scan-item-btn">Scan item</button>
+            <button className="addItem-btn" onClick={handleAddNewItem}>Add new item</button>
+            <button className="category-btn" onClick={handlePurchaseCategory}>Create category</button>
+            <button className="Scode-btn" onClick={handleScodePurchase}>Scode</button>
+            <button className="Barcode-btn" onClick={handleBarcodePopUp}>Barcode manually</button>
             <AddNewItemPurchase
               addNewItem={addNewItem}
               closeAddnewItemPurchase={closeAddnewItemPurchase}

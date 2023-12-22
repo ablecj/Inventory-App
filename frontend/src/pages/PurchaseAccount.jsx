@@ -65,7 +65,7 @@ const PurchaseAccount = () => {
     <DefaultLayout>
       <div className="purchase-accnt-container">
         <div className="purchase-header">
-          <h4>Purchase Account</h4>
+          <h4 className="PurchaseHeader-h4">Purchase Account</h4>
         </div>
         <div className="purchse-content">
           <div className="dropdown-container">

@@ -7,11 +7,14 @@
   padding: 20px;
 }
 
-.customerdetail-heading h4 {
-  color: rgb(5, 81, 213);
-  font-size: 23px;
-  font-style: italic;
+.customerdetail-heading {
   text-align: center;
+}
+.customerDetails-h4{
+  color: rgb(5, 81, 213);
+    font-size: 22px !important;
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: 500;
 }
 
 .customerdetail-content,
@@ -52,8 +55,9 @@
 
 .customertable-card {
   flex: 1 0 100px; /* Adjust card width as needed */
-  background-color: rgba(206, 236, 244, 0.916);
-  border: 1px solid #302f2f;
+  background-image: linear-gradient(to right, #003EFF, #577FFA);
+  color: whitesmoke;
+  border: 1px solid #ffffff;
   padding: 10px;
   transition: box-shadow 0.3s ease;
   box-shadow: none;
@@ -61,7 +65,7 @@
 }
 
 .customertable-card:hover {
-  box-shadow: 0 10px 15px 0 rgba(0, 0, 0, 0.7);
+  box-shadow: 0 10px 15px 0 rgb(38, 99, 240);
 }
 
 .customercard-content p {
@@ -73,7 +77,7 @@
   display: flex;
   flex-direction: column;
   margin-top: 20px;
-  background-color: rgba(206, 236, 244, 0.916);
+  background-image: linear-gradient(to right, #9aced6, #aed7ec);
   padding: 20px;
 }
 
@@ -96,7 +100,7 @@
   display: flex;
  justify-content: space-around;
   margin-top: 20px;
-  background-color: rgba(206, 236, 244, 0.916);
+  background-image: linear-gradient(to right, #9aced6, #aed7ec);
   padding: 20px;
 }
 

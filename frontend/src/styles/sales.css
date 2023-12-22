@@ -5,13 +5,16 @@
 /* .sles-heading{
     display: flex;
 } */
-.sales-heading h4 {
+.sales-heading {
   display: flex;
   text-align: center;
   justify-content: center;
+}
+.Sales-h4{
   color: rgb(5, 81, 213);
-  font-size: 23px;
-  font-style: italic;
+  font-size: 22px !important;
+  font-family: Arial, Helvetica, sans-serif;
+  font-weight: 500;
 }
 
 .salestable-content {
@@ -23,8 +26,9 @@
 
 .salestable-card {
   flex: 1 0 100px; /* Adjust card width as needed */
-  background-color: rgba(206, 236, 244, 0.916);
-  border: 1px solid #302f2f;
+  background-image: linear-gradient(to right, #003EFF, #577FFA);
+  color: whitesmoke;
+  border: 1px solid #ffffff;
   padding: 10px;
   transition: box-shadow 0.3s ease;
   box-shadow: none;
@@ -32,7 +36,7 @@
 }
 
 .salestable-card:hover {
-  box-shadow: 0 10px 15px 0 rgba(0, 0, 0, 0.7);
+  box-shadow: 0 10px 15px 0 rgb(38, 99, 240);
 }
 
 .salescard-content p {
@@ -59,15 +63,16 @@
 
 .outstanding-card {
   flex: 1 0 100px; /* Adjust card width as needed */
-  background-color: rgba(206, 236, 244, 0.916);
-  border: 1px solid #302f2f;
+  background-image: linear-gradient(to right, #003EFF, #577FFA);
+  color: whitesmoke;
+  border: 1px solid #ffffff;
   padding: 25px;
   transition: box-shadow 0.3s ease;
   box-shadow: none;
   margin-top: 30px;
 }
 .outstanding-card:hover{
-  box-shadow: 0 10px 15px 0 rgba(0, 0, 0, 0.7);
+  box-shadow: 0 10px 15px 0 rgb(38, 99, 240);
 }
 
 /* table */

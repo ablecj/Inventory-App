@@ -15,7 +15,7 @@ const CustomerDetails = () => {
     <DefaultLayout>
       <div className="customer-details-container">
         <div className="customerdetail-heading">
-          <h4>Customer Details</h4>
+          <h4 className="customerDetails-h4">Customer Details</h4>
         </div>
         <div className="customerdetail-content">
           <div className="customerdetails">

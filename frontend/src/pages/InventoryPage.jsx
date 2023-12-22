@@ -112,7 +112,7 @@ const InventoryPage = () => {
                 <label htmlFor="Vendor Name">Vendor Name</label>
                 <input type="text" placeholder="Vendor Name" maxLength="20" />
               </div>
-             
+             <div className="inventoryaddbtn">
              <div className="inventory-add">
              <button className="inventory-btn-add">Add</button>
              </div>
@@ -122,6 +122,7 @@ const InventoryPage = () => {
                   Item not exist <br /> Add new item
                 </button>
               </div>
+            </div>
             </div>
           </div>
         </div>

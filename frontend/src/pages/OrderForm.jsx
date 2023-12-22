@@ -200,7 +200,7 @@ const OrderForm = () => {
     <DefaultLayout>
       <div className="order-form-container">
         <div className="order-form-heading">
-          <h4>Order Page</h4>
+          <h4 className="OrderForm-h4">Order Page</h4>
         </div>
         <div className="order-form-content">
           <div className="barcode-section">

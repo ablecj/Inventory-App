@@ -3,10 +3,15 @@
     height: 100%;
 }
 .credit-note-heading{
-    color: rgb(5, 81, 213);
-    font-size: 23px;
-    font-style: italic;
+   
     text-align: center;
+    
+}
+.creditNote-h3{
+    color: rgb(5, 81, 213);
+    font-size: 22px !important;
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: 500;
 }
 .credit-note-content{
     width: 100%;

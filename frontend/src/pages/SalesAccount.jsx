@@ -95,7 +95,7 @@ const SalesAccount = () => {
     <DefaultLayout>
       <div className="sales-container">
         <div className="sales-heading">
-          <h4>Sales Account</h4>
+          <h4 className="Sales-h4">Sales Account</h4>
         </div>
         <div className="salestable">
             <div className="salestable-content">

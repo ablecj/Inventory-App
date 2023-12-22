@@ -60,7 +60,7 @@ const CreditNote = () => {
     <DefaultLayout>
       <div className="credit-note-container">
         <div className="credit-note-heading">
-          <h3>Purchase Return Credit Note</h3>
+          <h3 className="creditNote-h3">Purchase Return Credit Note</h3>
         </div>
         <div className="credit-note-content">
           <div className="Credit-select-dropdown">

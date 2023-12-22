@@ -8,15 +8,17 @@
   align-items: center;
   justify-content: center;
 }
-.purchase-heading h4 {
-  font-size: medium;
-  color: rgb(5, 81, 213);
+.purchase-heading {
   display: flex;
   align-items: center;
   justify-content: center;
   padding-bottom: 2rem;
-  /* font-size: 20px; */
-  font-weight: 900;
+}
+.PurchaseHeader-h4{
+  color: rgb(5, 81, 213);
+  font-size: 22px !important;
+  font-family: Arial, Helvetica, sans-serif;
+  font-weight: 500;
 }
 
 .purchase-bill-content {
@@ -27,11 +29,16 @@
 .purchaseBill-btn {
   display: flex;
   justify-content: space-evenly;
+  gap: 10px;
 }
-.purchaseBill-bt,
-button {
-  font-weight: 800;
-  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+.Scan-item-btn, .addItem-btn,
+.category-btn, .Scode-btn,
+.Barcode-btn{
+  width: 70px;
+  height: 70px;
+  flex: 1;
+  font-weight: 600;
+  font-family: Arial, Helvetica, sans-serif;
   font-size: 0.75rem;
   padding: 10px 20px;
   margin: 0;
@@ -39,15 +46,15 @@ button {
   border-width: 1px;
   border-radius: 5px;
   transition: border-radius 0.15s;
-  color: #001e2b;
+  color: #ffffff;
   stroke: #001e2b;
   fill: #001e2b;
   border-color: #001e2b;
-  background-color: #6c8dd5;
+  background-image: linear-gradient(to right, #010046, #0905E2);
 }
 .purchaseBill-bt,
 button:hover {
-  border-radius: 20px;
+  border-radius: 15px;
 }
 
 .purchaseBill-table {
